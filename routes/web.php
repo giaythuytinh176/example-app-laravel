@@ -51,17 +51,17 @@ Route::get("/login", function () {
 
 Route::post("/login", function (Request $request) {
     echo "<pre>";
-    $request->setJson(json_encode(["a"=>1]));
+    $request->setJson(json_encode(["a" => 1]));
     print_r($request->toArray());
 
 
-DebugBar::info($request);
+    DebugBar::info($request);
 
 
 });
 
 
-Route::get('/role',[
+Route::get('/role', [
     'middleware' => 'role:superadmin',
     'uses' => 'App\Http\Controllers\MainController@checkRole',
 ]);

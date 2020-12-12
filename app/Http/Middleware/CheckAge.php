@@ -11,14 +11,14 @@ class CheckAge
     /**
      * Handle an incoming request.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Closure  $next
+     * @param \Illuminate\Http\Request $request
+     * @param \Closure $next
      * @return mixed
      */
     public function handle(Request $request, Closure $next)
     {
         $user = Auth::user();
-        if($user->age >= 18){
+        if ($user->age >= 18) {
             return redirect('dashboard');
         }
         return $next($request);
