@@ -1,0 +1,2621 @@
+Illuminate\View\Factory {#245
+  #engines: Illuminate\View\Engines\EngineResolver {#177
+    #resolvers: array:3 [
+      "file" => Closure() {#178
+        class: "Illuminate\View\ViewServiceProvider"
+        this: Illuminate\View\ViewServiceProvider {#101
+          #app: Illuminate\Foundation\Application {#2
+            #basePath: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app"
+            #hasBeenBootstrapped: true
+            #booted: false
+            #bootingCallbacks: array:2 [
+              0 => Closure() {#195
+                class: "Illuminate\Foundation\Application"
+                this: Illuminate\Foundation\Application {#2}
+                use: {
+                  $instance: Illuminate\Queue\QueueServiceProvider {#189
+                    #app: Illuminate\Foundation\Application {#2}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                }
+                file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Foundation/Application.php"
+                line: "764 to 766"
+              }
+              1 => Closure() {#230
+                class: "Illuminate\Foundation\Application"
+                this: Illuminate\Foundation\Application {#2}
+                use: {
+                  $instance: Illuminate\Cache\CacheServiceProvider {#224
+                    #app: Illuminate\Foundation\Application {#2}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                }
+                file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Foundation/Application.php"
+                line: "764 to 766"
+              }
+            ]
+            #bootedCallbacks: array:1 [
+              0 => Closure() {#29
+                class: "Illuminate\Foundation\Console\Kernel"
+                this: App\Console\Kernel {#28
+                  #commands: []
+                  #app: Illuminate\Foundation\Application {#2}
+                  #events: Illuminate\Events\Dispatcher {#26
+                    #container: Illuminate\Foundation\Application {#2}
+                    #listeners: array:5 [
+                      "Illuminate\Queue\Events\Looping" => array:1 [
+                        0 => Closure($event, $payload) {#204
+                          class: "Illuminate\Events\Dispatcher"
+                          this: Illuminate\Events\Dispatcher {#26}
+                          use: {
+                            $listener: Closure() {#197 …}
+                            $wildcard: false
+                          }
+                          file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php"
+                          line: "386 to 392"
+                        }
+                      ]
+                      "Illuminate\Database\Events\QueryExecuted" => array:1 [
+                        0 => Closure($event, $payload) {#205
+                          class: "Illuminate\Events\Dispatcher"
+                          this: Illuminate\Events\Dispatcher {#26}
+                          use: {
+                            $listener: array:2 [
+                              0 => Facade\Ignition\QueryRecorder\QueryRecorder {#85
+                                #queries: []
+                                #app: Illuminate\Foundation\Application {#2}
+                              }
+                              1 => "record"
+                            ]
+                            $wildcard: false
+                          }
+                          file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php"
+                          line: "386 to 392"
+                        }
+                      ]
+                      "Illuminate\Log\Events\MessageLogged" => array:1 [
+                        0 => Closure($event, $payload) {#206
+                          class: "Illuminate\Events\Dispatcher"
+                          this: Illuminate\Events\Dispatcher {#26}
+                          use: {
+                            $listener: array:2 [
+                              0 => Facade\Ignition\LogRecorder\LogRecorder {#88
+                                #logMessages: []
+                                #app: Illuminate\Foundation\Application {#2}
+                              }
+                              1 => "record"
+                            ]
+                            $wildcard: false
+                          }
+                          file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php"
+                          line: "386 to 392"
+                        }
+                      ]
+                      "Illuminate\Foundation\Events\LocaleUpdated" => array:1 [
+                        0 => Closure($event, $payload) {#220
+                          class: "Illuminate\Events\Dispatcher"
+                          this: Illuminate\Events\Dispatcher {#26}
+                          use: {
+                            $listener: Closure() {#219 …}
+                            $wildcard: false
+                          }
+                          file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php"
+                          line: "386 to 392"
+                        }
+                      ]
+                      "Illuminate\Auth\Events\Registered" => array:1 [
+                        0 => Closure($event, $payload) {#222
+                          class: "Illuminate\Events\Dispatcher"
+                          this: Illuminate\Events\Dispatcher {#26}
+                          use: {
+                            $listener: "Illuminate\Auth\Listeners\SendEmailVerificationNotification"
+                            $wildcard: false
+                          }
+                          file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php"
+                          line: "404 to 412"
+                        }
+                      ]
+                    ]
+                    #wildcards: []
+                    #wildcardsCache: array:13 [
+                      "bootstrapping: Illuminate\Foundation\Bootstrap\LoadEnvironmentVariables" => []
+                      "bootstrapped: Illuminate\Foundation\Bootstrap\LoadEnvironmentVariables" => []
+                      "bootstrapping: Illuminate\Foundation\Bootstrap\LoadConfiguration" => []
+                      "bootstrapped: Illuminate\Foundation\Bootstrap\LoadConfiguration" => []
+                      "bootstrapping: Illuminate\Foundation\Bootstrap\HandleExceptions" => []
+                      "bootstrapped: Illuminate\Foundation\Bootstrap\HandleExceptions" => []
+                      "bootstrapping: Illuminate\Foundation\Bootstrap\RegisterFacades" => []
+                      "bootstrapped: Illuminate\Foundation\Bootstrap\RegisterFacades" => []
+                      "bootstrapping: Illuminate\Foundation\Bootstrap\SetRequestForConsole" => []
+                      "bootstrapped: Illuminate\Foundation\Bootstrap\SetRequestForConsole" => []
+                      "bootstrapping: Illuminate\Foundation\Bootstrap\RegisterProviders" => []
+                      "bootstrapped: Illuminate\Foundation\Bootstrap\RegisterProviders" => []
+                      "bootstrapping: Illuminate\Foundation\Bootstrap\BootProviders" => []
+                    ]
+                    #queueResolver: Closure() {#27
+                      class: "Illuminate\Events\EventServiceProvider"
+                      this: Illuminate\Events\EventServiceProvider {#6 …}
+                      use: {
+                        $app: Illuminate\Foundation\Application {#2}
+                      }
+                      file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Events/EventServiceProvider.php"
+                      line: "18 to 20"
+                    }
+                  }
+                  #artisan: null
+                  #commandsLoaded: false
+                  #bootstrappers: array:7 [
+                    0 => "Illuminate\Foundation\Bootstrap\LoadEnvironmentVariables"
+                    1 => "Illuminate\Foundation\Bootstrap\LoadConfiguration"
+                    2 => "Illuminate\Foundation\Bootstrap\HandleExceptions"
+                    3 => "Illuminate\Foundation\Bootstrap\RegisterFacades"
+                    4 => "Illuminate\Foundation\Bootstrap\SetRequestForConsole"
+                    5 => "Illuminate\Foundation\Bootstrap\RegisterProviders"
+                    6 => "Illuminate\Foundation\Bootstrap\BootProviders"
+                  ]
+                }
+                file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php"
+                line: "88 to 90"
+              }
+            ]
+            #terminatingCallbacks: []
+            #serviceProviders: & array:25 [
+              0 => Illuminate\Events\EventServiceProvider {#6 …}
+              1 => Illuminate\Log\LogServiceProvider {#8
+                #app: Illuminate\Foundation\Application {#2}
+                #bootingCallbacks: []
+                #bootedCallbacks: []
+              }
+              2 => Illuminate\Routing\RoutingServiceProvider {#10
+                #app: Illuminate\Foundation\Application {#2}
+                #bootingCallbacks: []
+                #bootedCallbacks: []
+              }
+              3 => Illuminate\Auth\AuthServiceProvider {#143
+                #app: Illuminate\Foundation\Application {#2}
+                #bootingCallbacks: []
+                #bootedCallbacks: []
+              }
+              4 => Illuminate\Cookie\CookieServiceProvider {#135
+                #app: Illuminate\Foundation\Application {#2}
+                #bootingCallbacks: []
+                #bootedCallbacks: []
+              }
+              5 => Illuminate\Database\DatabaseServiceProvider {#133
+                #app: Illuminate\Foundation\Application {#2}
+                #bootingCallbacks: []
+                #bootedCallbacks: []
+              }
+              6 => Illuminate\Encryption\EncryptionServiceProvider {#128
+                #app: Illuminate\Foundation\Application {#2}
+                #bootingCallbacks: []
+                #bootedCallbacks: []
+              }
+              7 => Illuminate\Filesystem\FilesystemServiceProvider {#123
+                #app: Illuminate\Foundation\Application {#2}
+                #bootingCallbacks: []
+                #bootedCallbacks: []
+              }
+              8 => Illuminate\Foundation\Providers\FormRequestServiceProvider {#117
+                #app: Illuminate\Foundation\Application {#2}
+                #bootingCallbacks: []
+                #bootedCallbacks: []
+              }
+              9 => Illuminate\Foundation\Providers\FoundationServiceProvider {#120
+                #providers: array:1 [
+                  0 => "Illuminate\Foundation\Providers\FormRequestServiceProvider"
+                ]
+                #instances: array:1 [
+                  0 => Illuminate\Foundation\Providers\FormRequestServiceProvider {#117}
+                ]
+                #app: Illuminate\Foundation\Application {#2}
+                #bootingCallbacks: []
+                #bootedCallbacks: []
+              }
+              10 => Illuminate\Notifications\NotificationServiceProvider {#114
+                #app: Illuminate\Foundation\Application {#2}
+                #bootingCallbacks: []
+                #bootedCallbacks: []
+              }
+              11 => Illuminate\Pagination\PaginationServiceProvider {#112
+                #app: Illuminate\Foundation\Application {#2}
+                #bootingCallbacks: []
+                #bootedCallbacks: []
+              }
+              12 => Illuminate\Session\SessionServiceProvider {#105
+                #app: Illuminate\Foundation\Application {#2}
+                #bootingCallbacks: []
+                #bootedCallbacks: []
+              }
+              13 => Illuminate\View\ViewServiceProvider {#101}
+              14 => Facade\Ignition\IgnitionServiceProvider {#98
+                #app: Illuminate\Foundation\Application {#2}
+                #bootingCallbacks: []
+                #bootedCallbacks: []
+              }
+              15 => Fideloper\Proxy\TrustedProxyServiceProvider {#69
+                #app: Illuminate\Foundation\Application {#2}
+                #bootingCallbacks: []
+                #bootedCallbacks: []
+              }
+              16 => Fruitcake\Cors\CorsServiceProvider {#68
+                #app: Illuminate\Foundation\Application {#2}
+                #bootingCallbacks: []
+                #bootedCallbacks: []
+              }
+              17 => Carbon\Laravel\ServiceProvider {#73
+                #app: Illuminate\Foundation\Application {#2}
+                #bootingCallbacks: []
+                #bootedCallbacks: []
+              }
+              18 => NunoMaduro\Collision\Adapters\Laravel\CollisionServiceProvider {#151
+                #defer: true
+                #app: Illuminate\Foundation\Application {#2}
+                #bootingCallbacks: []
+                #bootedCallbacks: []
+              }
+              19 => App\Providers\AppServiceProvider {#154
+                #app: Illuminate\Foundation\Application {#2}
+                #bootingCallbacks: []
+                #bootedCallbacks: []
+              }
+              20 => App\Providers\AuthServiceProvider {#163
+                #policies: []
+                #app: Illuminate\Foundation\Application {#2}
+                #bootingCallbacks: []
+                #bootedCallbacks: []
+              }
+              21 => App\Providers\EventServiceProvider {#169
+                #listen: array:1 [
+                  "Illuminate\Auth\Events\Registered" => array:1 [
+                    0 => "Illuminate\Auth\Listeners\SendEmailVerificationNotification"
+                  ]
+                ]
+                #subscribe: []
+                #app: Illuminate\Foundation\Application {#2}
+                #bootingCallbacks: array:1 [
+                  0 => Closure() {#170
+                    class: "Illuminate\Foundation\Support\Providers\EventServiceProvider"
+                    this: App\Providers\EventServiceProvider {#169}
+                    file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/EventServiceProvider.php"
+                    line: "32 to 44"
+                  }
+                ]
+                #bootedCallbacks: []
+              }
+              22 => & App\Providers\RouteServiceProvider {#171
+                #namespace: null
+                #loadRoutesUsing: Closure() {#233
+                  class: "App\Providers\RouteServiceProvider"
+                  this: App\Providers\RouteServiceProvider {#171}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/app/Providers/RouteServiceProvider.php"
+                  line: "40 to 49"
+                }
+                #app: Illuminate\Foundation\Application {#2}
+                #bootingCallbacks: []
+                #bootedCallbacks: array:1 [
+                  0 => Closure() {#172
+                    class: "Illuminate\Foundation\Support\Providers\RouteServiceProvider"
+                    this: App\Providers\RouteServiceProvider {#171}
+                    file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php"
+                    line: "39 to 52"
+                  }
+                ]
+              }
+              23 => Illuminate\Queue\QueueServiceProvider {#189}
+              24 => Illuminate\Cache\CacheServiceProvider {#224}
+            ]
+            #loadedProviders: array:25 [
+              "Illuminate\Events\EventServiceProvider" => true
+              "Illuminate\Log\LogServiceProvider" => true
+              "Illuminate\Routing\RoutingServiceProvider" => true
+              "Illuminate\Auth\AuthServiceProvider" => true
+              "Illuminate\Cookie\CookieServiceProvider" => true
+              "Illuminate\Database\DatabaseServiceProvider" => true
+              "Illuminate\Encryption\EncryptionServiceProvider" => true
+              "Illuminate\Filesystem\FilesystemServiceProvider" => true
+              "Illuminate\Foundation\Providers\FormRequestServiceProvider" => true
+              "Illuminate\Foundation\Providers\FoundationServiceProvider" => true
+              "Illuminate\Notifications\NotificationServiceProvider" => true
+              "Illuminate\Pagination\PaginationServiceProvider" => true
+              "Illuminate\Session\SessionServiceProvider" => true
+              "Illuminate\View\ViewServiceProvider" => true
+              "Facade\Ignition\IgnitionServiceProvider" => true
+              "Fideloper\Proxy\TrustedProxyServiceProvider" => true
+              "Fruitcake\Cors\CorsServiceProvider" => true
+              "Carbon\Laravel\ServiceProvider" => true
+              "NunoMaduro\Collision\Adapters\Laravel\CollisionServiceProvider" => true
+              "App\Providers\AppServiceProvider" => true
+              "App\Providers\AuthServiceProvider" => true
+              "App\Providers\EventServiceProvider" => true
+              "App\Providers\RouteServiceProvider" => true
+              "Illuminate\Queue\QueueServiceProvider" => true
+              "Illuminate\Cache\CacheServiceProvider" => true
+            ]
+            #deferredServices: array:114 [
+              "Illuminate\Broadcasting\BroadcastManager" => "Illuminate\Broadcasting\BroadcastServiceProvider"
+              "Illuminate\Contracts\Broadcasting\Factory" => "Illuminate\Broadcasting\BroadcastServiceProvider"
+              "Illuminate\Contracts\Broadcasting\Broadcaster" => "Illuminate\Broadcasting\BroadcastServiceProvider"
+              "Illuminate\Bus\Dispatcher" => "Illuminate\Bus\BusServiceProvider"
+              "Illuminate\Contracts\Bus\Dispatcher" => "Illuminate\Bus\BusServiceProvider"
+              "Illuminate\Contracts\Bus\QueueingDispatcher" => "Illuminate\Bus\BusServiceProvider"
+              "Illuminate\Bus\BatchRepository" => "Illuminate\Bus\BusServiceProvider"
+              "cache" => "Illuminate\Cache\CacheServiceProvider"
+              "cache.store" => "Illuminate\Cache\CacheServiceProvider"
+              "cache.psr6" => "Illuminate\Cache\CacheServiceProvider"
+              "memcached.connector" => "Illuminate\Cache\CacheServiceProvider"
+              "command.cache.clear" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.cache.forget" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.clear-compiled" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.auth.resets.clear" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.config.cache" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.config.clear" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "Illuminate\Database\Console\DbCommand" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.db.wipe" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.down" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.environment" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.event.cache" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.event.clear" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.event.list" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.key.generate" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.optimize" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.optimize.clear" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.package.discover" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.queue.clear" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.queue.failed" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.queue.flush" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.queue.forget" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.queue.listen" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.queue.restart" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.queue.retry" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.queue.retry-batch" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.queue.work" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.route.cache" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.route.clear" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.route.list" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.schema.dump" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.seed" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "Illuminate\Console\Scheduling\ScheduleFinishCommand" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "Illuminate\Console\Scheduling\ScheduleRunCommand" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "Illuminate\Console\Scheduling\ScheduleWorkCommand" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.storage.link" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.up" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.view.cache" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.view.clear" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.cache.table" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.cast.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.channel.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.component.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.console.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.controller.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.event.generate" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.event.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.exception.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.factory.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.job.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.listener.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.mail.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.middleware.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.model.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.notification.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.notification.table" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.observer.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.policy.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.provider.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.queue.failed-table" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.queue.table" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.queue.batches-table" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.request.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.resource.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.rule.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.seeder.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.session.table" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.serve" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.stub.publish" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.test.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.vendor.publish" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "migrator" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "migration.repository" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "migration.creator" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.migrate" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.migrate.fresh" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.migrate.install" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.migrate.refresh" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.migrate.reset" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.migrate.rollback" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.migrate.status" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "command.migrate.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "composer" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+              "hash" => "Illuminate\Hashing\HashServiceProvider"
+              "hash.driver" => "Illuminate\Hashing\HashServiceProvider"
+              "mail.manager" => "Illuminate\Mail\MailServiceProvider"
+              "mailer" => "Illuminate\Mail\MailServiceProvider"
+              "Illuminate\Mail\Markdown" => "Illuminate\Mail\MailServiceProvider"
+              "Illuminate\Contracts\Pipeline\Hub" => "Illuminate\Pipeline\PipelineServiceProvider"
+              "queue.connection" => "Illuminate\Queue\QueueServiceProvider"
+              "queue.failer" => "Illuminate\Queue\QueueServiceProvider"
+              "queue.listener" => "Illuminate\Queue\QueueServiceProvider"
+              "queue.worker" => "Illuminate\Queue\QueueServiceProvider"
+              "redis" => "Illuminate\Redis\RedisServiceProvider"
+              "redis.connection" => "Illuminate\Redis\RedisServiceProvider"
+              "auth.password" => "Illuminate\Auth\Passwords\PasswordResetServiceProvider"
+              "auth.password.broker" => "Illuminate\Auth\Passwords\PasswordResetServiceProvider"
+              "translator" => "Illuminate\Translation\TranslationServiceProvider"
+              "translation.loader" => "Illuminate\Translation\TranslationServiceProvider"
+              "validator" => "Illuminate\Validation\ValidationServiceProvider"
+              "validation.presence" => "Illuminate\Validation\ValidationServiceProvider"
+              "sail.install-command" => "Laravel\Sail\SailServiceProvider"
+              "sail.publish-command" => "Laravel\Sail\SailServiceProvider"
+              "command.tinker" => "Laravel\Tinker\TinkerServiceProvider"
+            ]
+            #appPath: null
+            #databasePath: null
+            #storagePath: null
+            #environmentPath: null
+            #environmentFile: ".env"
+            #isRunningInConsole: true
+            #namespace: null
+            #absoluteCachePathPrefixes: array:2 [
+              0 => "/"
+              1 => "\"
+            ]
+            #resolved: array:39 [
+              "events" => true
+              "App\Console\Kernel" => true
+              "Illuminate\Contracts\Console\Kernel" => true
+              "Illuminate\Foundation\Bootstrap\LoadEnvironmentVariables" => true
+              "Illuminate\Foundation\Bootstrap\LoadConfiguration" => true
+              "Illuminate\Foundation\Bootstrap\HandleExceptions" => true
+              "env" => true
+              "Illuminate\Foundation\Bootstrap\RegisterFacades" => true
+              "Illuminate\Foundation\PackageManifest" => true
+              "Illuminate\Foundation\Bootstrap\SetRequestForConsole" => true
+              "Illuminate\Foundation\Bootstrap\RegisterProviders" => true
+              "Facade\Ignition\LogRecorder\LogRecorder" => true
+              "Facade\Ignition\DumpRecorder\DumpRecorder" => true
+              "Facade\Ignition\QueryRecorder\QueryRecorder" => true
+              "flare.http" => true
+              "Facade\FlareClient\Flare" => true
+              "Facade\Ignition\Middleware\SetNotifierName" => true
+              "Facade\Ignition\Middleware\AddEnvironmentInformation" => true
+              "Facade\Ignition\Middleware\AddLogs" => true
+              "Facade\Ignition\Middleware\AddDumps" => true
+              "Facade\Ignition\Middleware\AddQueries" => true
+              "Facade\IgnitionContracts\SolutionProviderRepository" => true
+              "Facade\Ignition\Middleware\AddSolutions" => true
+              "App\Exceptions\Handler" => true
+              "Illuminate\Contracts\Debug\ExceptionHandler" => true
+              "Illuminate\Foundation\Bootstrap\BootProviders" => true
+              "db.factory" => true
+              "db" => true
+              "view.engine.resolver" => true
+              "files" => true
+              "blade.compiler" => true
+              "log" => true
+              "queue" => true
+              "cache" => true
+              "cache.store" => true
+              "Illuminate\Cache\RateLimiter" => true
+              "router" => true
+              "view.finder" => true
+              "view" => true
+            ]
+            #bindings: array:66 [
+              "Illuminate\Foundation\Mix" => array:2 [
+                "concrete" => Closure($container, $parameters = []) {#4
+                  class: "Illuminate\Container\Container"
+                  this: Illuminate\Foundation\Application {#2}
+                  use: {
+                    $abstract: "Illuminate\Foundation\Mix"
+                    $concrete: "Illuminate\Foundation\Mix"
+                  }
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Container/Container.php"
+                  line: "277 to 285"
+                }
+                "shared" => true
+              ]
+              "Illuminate\Foundation\PackageManifest" => array:2 [
+                "concrete" => Closure() {#5
+                  class: "Illuminate\Foundation\Application"
+                  this: Illuminate\Foundation\Application {#2}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Foundation/Application.php"
+                  line: "198 to 202"
+                }
+                "shared" => true
+              ]
+              "events" => array:2 [
+                "concrete" => Closure($app) {#7
+                  class: "Illuminate\Events\EventServiceProvider"
+                  this: Illuminate\Events\EventServiceProvider {#6 …}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Events/EventServiceProvider.php"
+                  line: "17 to 21"
+                }
+                "shared" => true
+              ]
+              "log" => array:2 [
+                "concrete" => Closure($app) {#9
+                  class: "Illuminate\Log\LogServiceProvider"
+                  this: Illuminate\Log\LogServiceProvider {#8}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Log/LogServiceProvider.php"
+                  line: "16 to 18"
+                }
+                "shared" => true
+              ]
+              "router" => array:2 [
+                "concrete" => Closure($app) {#11
+                  class: "Illuminate\Routing\RoutingServiceProvider"
+                  this: Illuminate\Routing\RoutingServiceProvider {#10}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php"
+                  line: "42 to 44"
+                }
+                "shared" => true
+              ]
+              "url" => array:2 [
+                "concrete" => Closure($app) {#12
+                  class: "Illuminate\Routing\RoutingServiceProvider"
+                  this: Illuminate\Routing\RoutingServiceProvider {#10}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php"
+                  line: "54 to 67"
+                }
+                "shared" => true
+              ]
+              "redirect" => array:2 [
+                "concrete" => Closure($app) {#14
+                  class: "Illuminate\Routing\RoutingServiceProvider"
+                  this: Illuminate\Routing\RoutingServiceProvider {#10}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php"
+                  line: "111 to 122"
+                }
+                "shared" => true
+              ]
+              "Psr\Http\Message\ServerRequestInterface" => array:2 [
+                "concrete" => Closure($app) {#15
+                  class: "Illuminate\Routing\RoutingServiceProvider"
+                  this: Illuminate\Routing\RoutingServiceProvider {#10}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php"
+                  line: "132 to 141"
+                }
+                "shared" => false
+              ]
+              "Psr\Http\Message\ResponseInterface" => array:2 [
+                "concrete" => Closure() {#16
+                  class: "Illuminate\Routing\RoutingServiceProvider"
+                  this: Illuminate\Routing\RoutingServiceProvider {#10}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php"
+                  line: "151 to 157"
+                }
+                "shared" => false
+              ]
+              "Illuminate\Contracts\Routing\ResponseFactory" => array:2 [
+                "concrete" => Closure($app) {#17
+                  class: "Illuminate\Routing\RoutingServiceProvider"
+                  this: Illuminate\Routing\RoutingServiceProvider {#10}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php"
+                  line: "167 to 169"
+                }
+                "shared" => true
+              ]
+              "Illuminate\Routing\Contracts\ControllerDispatcher" => array:2 [
+                "concrete" => Closure($app) {#18
+                  class: "Illuminate\Routing\RoutingServiceProvider"
+                  this: Illuminate\Routing\RoutingServiceProvider {#10}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php"
+                  line: "179 to 181"
+                }
+                "shared" => true
+              ]
+              "Illuminate\Contracts\Http\Kernel" => array:2 [
+                "concrete" => Closure($container, $parameters = []) {#19
+                  class: "Illuminate\Container\Container"
+                  this: Illuminate\Foundation\Application {#2}
+                  use: {
+                    $abstract: "Illuminate\Contracts\Http\Kernel"
+                    $concrete: "App\Http\Kernel"
+                  }
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Container/Container.php"
+                  line: "277 to 285"
+                }
+                "shared" => true
+              ]
+              "Illuminate\Contracts\Console\Kernel" => array:2 [
+                "concrete" => Closure($container, $parameters = []) {#20
+                  class: "Illuminate\Container\Container"
+                  this: Illuminate\Foundation\Application {#2}
+                  use: {
+                    $abstract: "Illuminate\Contracts\Console\Kernel"
+                    $concrete: "App\Console\Kernel"
+                  }
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Container/Container.php"
+                  line: "277 to 285"
+                }
+                "shared" => true
+              ]
+              "Illuminate\Contracts\Debug\ExceptionHandler" => array:2 [
+                "concrete" => Closure($app) {#165
+                  class: "NunoMaduro\Collision\Adapters\Laravel\CollisionServiceProvider"
+                  this: NunoMaduro\Collision\Adapters\Laravel\CollisionServiceProvider {#151}
+                  use: {
+                    $appExceptionHandler: App\Exceptions\Handler {#166
+                      #dontReport: []
+                      #dontFlash: array:2 [
+                        0 => "password"
+                        1 => "password_confirmation"
+                      ]
+                      #container: Illuminate\Foundation\Application {#2}
+                      #reportCallbacks: array:1 [
+                        0 => Illuminate\Foundation\Exceptions\ReportableHandler {#168
+                          #callback: Closure(Throwable $e) {#167
+                            class: "App\Exceptions\Handler"
+                            this: App\Exceptions\Handler {#166}
+                            file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/app/Exceptions/Handler.php"
+                            line: "36 to 38"
+                          }
+                          #shouldStop: false
+                        }
+                      ]
+                      #renderCallbacks: []
+                      #exceptionMap: []
+                      #internalDontReport: array:8 [
+                        0 => "Illuminate\Auth\AuthenticationException"
+                        1 => "Illuminate\Auth\Access\AuthorizationException"
+                        2 => "Symfony\Component\HttpKernel\Exception\HttpException"
+                        3 => "Illuminate\Http\Exceptions\HttpResponseException"
+                        4 => "Illuminate\Database\Eloquent\ModelNotFoundException"
+                        5 => "Symfony\Component\HttpFoundation\Exception\SuspiciousOperationException"
+                        6 => "Illuminate\Session\TokenMismatchException"
+                        7 => "Illuminate\Validation\ValidationException"
+                      ]
+                    }
+                  }
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/nunomaduro/collision/src/Adapters/Laravel/CollisionServiceProvider.php"
+                  line: "67 to 69"
+                }
+                "shared" => true
+              ]
+              "env" => array:2 [
+                "concrete" => Closure() {#67
+                  class: "Illuminate\Container\Container"
+                  this: Illuminate\Foundation\Application {#2}
+                  use: {
+                    $value: "local"
+                  }
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Container/Container.php"
+                  line: "1366 to 1368"
+                }
+                "shared" => false
+              ]
+              "auth" => array:2 [
+                "concrete" => Closure($app) {#77
+                  class: "Illuminate\Auth\AuthServiceProvider"
+                  this: Illuminate\Auth\AuthServiceProvider {#143}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Auth/AuthServiceProvider.php"
+                  line: "37 to 44"
+                }
+                "shared" => true
+              ]
+              "auth.driver" => array:2 [
+                "concrete" => Closure($app) {#146
+                  class: "Illuminate\Auth\AuthServiceProvider"
+                  this: Illuminate\Auth\AuthServiceProvider {#143}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Auth/AuthServiceProvider.php"
+                  line: "46 to 48"
+                }
+                "shared" => true
+              ]
+              "Illuminate\Contracts\Auth\Authenticatable" => array:2 [
+                "concrete" => Closure($app) {#141
+                  class: "Illuminate\Auth\AuthServiceProvider"
+                  this: Illuminate\Auth\AuthServiceProvider {#143}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Auth/AuthServiceProvider.php"
+                  line: "59 to 61"
+                }
+                "shared" => false
+              ]
+              "Illuminate\Contracts\Auth\Access\Gate" => array:2 [
+                "concrete" => Closure($app) {#74
+                  class: "Illuminate\Auth\AuthServiceProvider"
+                  this: Illuminate\Auth\AuthServiceProvider {#143}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Auth/AuthServiceProvider.php"
+                  line: "72 to 76"
+                }
+                "shared" => true
+              ]
+              "Illuminate\Auth\Middleware\RequirePassword" => array:2 [
+                "concrete" => Closure($app) {#140
+                  class: "Illuminate\Auth\AuthServiceProvider"
+                  this: Illuminate\Auth\AuthServiceProvider {#143}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Auth/AuthServiceProvider.php"
+                  line: "87 to 93"
+                }
+                "shared" => false
+              ]
+              "cookie" => array:2 [
+                "concrete" => Closure($app) {#136
+                  class: "Illuminate\Cookie\CookieServiceProvider"
+                  this: Illuminate\Cookie\CookieServiceProvider {#135}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Cookie/CookieServiceProvider.php"
+                  line: "16 to 22"
+                }
+                "shared" => true
+              ]
+              "db.factory" => array:2 [
+                "concrete" => Closure($app) {#134
+                  class: "Illuminate\Database\DatabaseServiceProvider"
+                  this: Illuminate\Database\DatabaseServiceProvider {#133}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Database/DatabaseServiceProvider.php"
+                  line: "60 to 62"
+                }
+                "shared" => true
+              ]
+              "db" => array:2 [
+                "concrete" => Closure($app) {#131
+                  class: "Illuminate\Database\DatabaseServiceProvider"
+                  this: Illuminate\Database\DatabaseServiceProvider {#133}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Database/DatabaseServiceProvider.php"
+                  line: "67 to 69"
+                }
+                "shared" => true
+              ]
+              "db.connection" => array:2 [
+                "concrete" => Closure($app) {#132
+                  class: "Illuminate\Database\DatabaseServiceProvider"
+                  this: Illuminate\Database\DatabaseServiceProvider {#133}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Database/DatabaseServiceProvider.php"
+                  line: "71 to 73"
+                }
+                "shared" => false
+              ]
+              "db.transactions" => array:2 [
+                "concrete" => Closure($app) {#129
+                  class: "Illuminate\Database\DatabaseServiceProvider"
+                  this: Illuminate\Database\DatabaseServiceProvider {#133}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Database/DatabaseServiceProvider.php"
+                  line: "75 to 77"
+                }
+                "shared" => true
+              ]
+              "Faker\Generator" => array:2 [
+                "concrete" => Closure($app, $parameters) {#130
+                  class: "Illuminate\Database\DatabaseServiceProvider"
+                  this: Illuminate\Database\DatabaseServiceProvider {#133}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Database/DatabaseServiceProvider.php"
+                  line: "87 to 97"
+                }
+                "shared" => true
+              ]
+              "Illuminate\Contracts\Queue\EntityResolver" => array:2 [
+                "concrete" => Closure() {#127
+                  class: "Illuminate\Database\DatabaseServiceProvider"
+                  this: Illuminate\Database\DatabaseServiceProvider {#133}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Database/DatabaseServiceProvider.php"
+                  line: "107 to 109"
+                }
+                "shared" => true
+              ]
+              "encrypter" => array:2 [
+                "concrete" => Closure($app) {#125
+                  class: "Illuminate\Encryption\EncryptionServiceProvider"
+                  this: Illuminate\Encryption\EncryptionServiceProvider {#128}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php"
+                  line: "29 to 33"
+                }
+                "shared" => true
+              ]
+              "files" => array:2 [
+                "concrete" => Closure() {#124
+                  class: "Illuminate\Filesystem\FilesystemServiceProvider"
+                  this: Illuminate\Filesystem\FilesystemServiceProvider {#123}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemServiceProvider.php"
+                  line: "28 to 30"
+                }
+                "shared" => true
+              ]
+              "filesystem" => array:2 [
+                "concrete" => Closure($app) {#121
+                  class: "Illuminate\Filesystem\FilesystemServiceProvider"
+                  this: Illuminate\Filesystem\FilesystemServiceProvider {#123}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemServiceProvider.php"
+                  line: "58 to 60"
+                }
+                "shared" => true
+              ]
+              "filesystem.disk" => array:2 [
+                "concrete" => Closure($app) {#122
+                  class: "Illuminate\Filesystem\FilesystemServiceProvider"
+                  this: Illuminate\Filesystem\FilesystemServiceProvider {#123}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemServiceProvider.php"
+                  line: "42 to 44"
+                }
+                "shared" => true
+              ]
+              "filesystem.cloud" => array:2 [
+                "concrete" => Closure($app) {#119
+                  class: "Illuminate\Filesystem\FilesystemServiceProvider"
+                  this: Illuminate\Filesystem\FilesystemServiceProvider {#123}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemServiceProvider.php"
+                  line: "46 to 48"
+                }
+                "shared" => true
+              ]
+              "Illuminate\Notifications\ChannelManager" => array:2 [
+                "concrete" => Closure($app) {#111
+                  class: "Illuminate\Notifications\NotificationServiceProvider"
+                  this: Illuminate\Notifications\NotificationServiceProvider {#114}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Notifications/NotificationServiceProvider.php"
+                  line: "34 to 36"
+                }
+                "shared" => true
+              ]
+              "session" => array:2 [
+                "concrete" => Closure($app) {#106
+                  class: "Illuminate\Session\SessionServiceProvider"
+                  this: Illuminate\Session\SessionServiceProvider {#105}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Session/SessionServiceProvider.php"
+                  line: "36 to 38"
+                }
+                "shared" => true
+              ]
+              "session.store" => array:2 [
+                "concrete" => Closure($app) {#103
+                  class: "Illuminate\Session\SessionServiceProvider"
+                  this: Illuminate\Session\SessionServiceProvider {#105}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Session/SessionServiceProvider.php"
+                  line: "48 to 53"
+                }
+                "shared" => true
+              ]
+              "Illuminate\Session\Middleware\StartSession" => array:2 [
+                "concrete" => Closure() {#104
+                  class: "Illuminate\Session\SessionServiceProvider"
+                  this: Illuminate\Session\SessionServiceProvider {#105}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Session/SessionServiceProvider.php"
+                  line: "22 to 26"
+                }
+                "shared" => true
+              ]
+              "view" => array:2 [
+                "concrete" => Closure($app) {#102
+                  class: "Illuminate\View\ViewServiceProvider"
+                  this: Illuminate\View\ViewServiceProvider {#101}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php"
+                  line: "34 to 52"
+                }
+                "shared" => true
+              ]
+              "view.finder" => array:2 [
+                "concrete" => Closure($app) {#99
+                  class: "Illuminate\View\ViewServiceProvider"
+                  this: Illuminate\View\ViewServiceProvider {#101}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php"
+                  line: "75 to 77"
+                }
+                "shared" => false
+              ]
+              "blade.compiler" => array:2 [
+                "concrete" => Closure($app) {#100
+                  class: "Illuminate\View\ViewServiceProvider"
+                  this: Illuminate\View\ViewServiceProvider {#101}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php"
+                  line: "87 to 91"
+                }
+                "shared" => true
+              ]
+              "view.engine.resolver" => array:2 [
+                "concrete" => Closure() {#97
+                  class: "Illuminate\View\ViewServiceProvider"
+                  this: Illuminate\View\ViewServiceProvider {#101}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php"
+                  line: "101 to 112"
+                }
+                "shared" => true
+              ]
+              "Facade\IgnitionContracts\SolutionProviderRepository" => array:2 [
+                "concrete" => Closure() {#95
+                  class: "Facade\Ignition\IgnitionServiceProvider"
+                  this: Facade\Ignition\IgnitionServiceProvider {#98}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/facade/ignition/src/IgnitionServiceProvider.php"
+                  line: "174 to 178"
+                }
+                "shared" => true
+              ]
+              "Facade\Ignition\ErrorPage\Renderer" => array:2 [
+                "concrete" => Closure() {#96
+                  class: "Facade\Ignition\IgnitionServiceProvider"
+                  this: Facade\Ignition\IgnitionServiceProvider {#98}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/facade/ignition/src/IgnitionServiceProvider.php"
+                  line: "185 to 187"
+                }
+                "shared" => false
+              ]
+              "Whoops\Handler\HandlerInterface" => array:2 [
+                "concrete" => Closure(Application $app) {#93
+                  class: "Facade\Ignition\IgnitionServiceProvider"
+                  this: Facade\Ignition\IgnitionServiceProvider {#98}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/facade/ignition/src/IgnitionServiceProvider.php"
+                  line: "194 to 196"
+                }
+                "shared" => false
+              ]
+              "Facade\Ignition\IgnitionConfig" => array:2 [
+                "concrete" => Closure() {#94
+                  class: "Facade\Ignition\IgnitionServiceProvider"
+                  this: Facade\Ignition\IgnitionServiceProvider {#98}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/facade/ignition/src/IgnitionServiceProvider.php"
+                  line: "203 to 215"
+                }
+                "shared" => true
+              ]
+              "flare.http" => array:2 [
+                "concrete" => Closure() {#91
+                  class: "Facade\Ignition\IgnitionServiceProvider"
+                  this: Facade\Ignition\IgnitionServiceProvider {#98}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/facade/ignition/src/IgnitionServiceProvider.php"
+                  line: "222 to 228"
+                }
+                "shared" => true
+              ]
+              "Facade\FlareClient\Flare" => array:2 [
+                "concrete" => Closure() {#92
+                  class: "Facade\Ignition\IgnitionServiceProvider"
+                  this: Facade\Ignition\IgnitionServiceProvider {#98}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/facade/ignition/src/IgnitionServiceProvider.php"
+                  line: "232 to 238"
+                }
+                "shared" => true
+              ]
+              "Facade\Ignition\LogRecorder\LogRecorder" => array:2 [
+                "concrete" => Closure($container, $parameters = []) {#87
+                  class: "Illuminate\Container\Container"
+                  this: Illuminate\Foundation\Application {#2}
+                  use: {
+                    $abstract: "Facade\Ignition\LogRecorder\LogRecorder"
+                    $concrete: "Facade\Ignition\LogRecorder\LogRecorder"
+                  }
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Container/Container.php"
+                  line: "277 to 285"
+                }
+                "shared" => true
+              ]
+              "Facade\Ignition\DumpRecorder\DumpRecorder" => array:2 [
+                "concrete" => Closure($container, $parameters = []) {#89
+                  class: "Illuminate\Container\Container"
+                  this: Illuminate\Foundation\Application {#2}
+                  use: {
+                    $abstract: "Facade\Ignition\DumpRecorder\DumpRecorder"
+                    $concrete: "Facade\Ignition\DumpRecorder\DumpRecorder"
+                  }
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Container/Container.php"
+                  line: "277 to 285"
+                }
+                "shared" => true
+              ]
+              "Facade\Ignition\QueryRecorder\QueryRecorder" => array:2 [
+                "concrete" => Closure($container, $parameters = []) {#86
+                  class: "Illuminate\Container\Container"
+                  this: Illuminate\Foundation\Application {#2}
+                  use: {
+                    $abstract: "Facade\Ignition\QueryRecorder\QueryRecorder"
+                    $concrete: "Facade\Ignition\QueryRecorder\QueryRecorder"
+                  }
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Container/Container.php"
+                  line: "277 to 285"
+                }
+                "shared" => true
+              ]
+              "Asm89\Stack\CorsService" => array:2 [
+                "concrete" => Closure($app) {#64
+                  class: "Fruitcake\Cors\CorsServiceProvider"
+                  this: Fruitcake\Cors\CorsServiceProvider {#68}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/fruitcake/laravel-cors/src/CorsServiceProvider.php"
+                  line: "21 to 23"
+                }
+                "shared" => true
+              ]
+              "NunoMaduro\Collision\Contracts\Provider" => array:2 [
+                "concrete" => Closure() {#164
+                  class: "NunoMaduro\Collision\Adapters\Laravel\CollisionServiceProvider"
+                  this: NunoMaduro\Collision\Adapters\Laravel\CollisionServiceProvider {#151}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/nunomaduro/collision/src/Adapters/Laravel/CollisionServiceProvider.php"
+                  line: "48 to 61"
+                }
+                "shared" => false
+              ]
+              "flare.logger" => array:2 [
+                "concrete" => Closure($app) {#180
+                  class: "Facade\Ignition\IgnitionServiceProvider"
+                  this: Facade\Ignition\IgnitionServiceProvider {#98}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/facade/ignition/src/IgnitionServiceProvider.php"
+                  line: "245 to 258"
+                }
+                "shared" => true
+              ]
+              "command.flare:test" => array:2 [
+                "concrete" => Closure($container, $parameters = []) {#181
+                  class: "Illuminate\Container\Container"
+                  this: Illuminate\Foundation\Application {#2}
+                  use: {
+                    $abstract: "command.flare:test"
+                    $concrete: "Facade\Ignition\Commands\TestCommand"
+                  }
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Container/Container.php"
+                  line: "277 to 285"
+                }
+                "shared" => false
+              ]
+              "command.make:solution" => array:2 [
+                "concrete" => Closure($container, $parameters = []) {#187
+                  class: "Illuminate\Container\Container"
+                  this: Illuminate\Foundation\Application {#2}
+                  use: {
+                    $abstract: "command.make:solution"
+                    $concrete: "Facade\Ignition\Commands\SolutionMakeCommand"
+                  }
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Container/Container.php"
+                  line: "277 to 285"
+                }
+                "shared" => false
+              ]
+              "command.make:solution-provider" => array:2 [
+                "concrete" => Closure($container, $parameters = []) {#188
+                  class: "Illuminate\Container\Container"
+                  this: Illuminate\Foundation\Application {#2}
+                  use: {
+                    $abstract: "command.make:solution-provider"
+                    $concrete: "Facade\Ignition\Commands\SolutionProviderMakeCommand"
+                  }
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Container/Container.php"
+                  line: "277 to 285"
+                }
+                "shared" => false
+              ]
+              "queue" => array:2 [
+                "concrete" => Closure($app) {#190
+                  class: "Illuminate\Queue\QueueServiceProvider"
+                  this: Illuminate\Queue\QueueServiceProvider {#189}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Queue/QueueServiceProvider.php"
+                  line: "44 to 51"
+                }
+                "shared" => true
+              ]
+              "queue.connection" => array:2 [
+                "concrete" => Closure($app) {#191
+                  class: "Illuminate\Queue\QueueServiceProvider"
+                  this: Illuminate\Queue\QueueServiceProvider {#189}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Queue/QueueServiceProvider.php"
+                  line: "61 to 63"
+                }
+                "shared" => true
+              ]
+              "queue.worker" => array:2 [
+                "concrete" => Closure($app) {#192
+                  class: "Illuminate\Queue\QueueServiceProvider"
+                  this: Illuminate\Queue\QueueServiceProvider {#189}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Queue/QueueServiceProvider.php"
+                  line: "164 to 175"
+                }
+                "shared" => true
+              ]
+              "queue.listener" => array:2 [
+                "concrete" => Closure($app) {#193
+                  class: "Illuminate\Queue\QueueServiceProvider"
+                  this: Illuminate\Queue\QueueServiceProvider {#189}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Queue/QueueServiceProvider.php"
+                  line: "185 to 187"
+                }
+                "shared" => true
+              ]
+              "queue.failer" => array:2 [
+                "concrete" => Closure($app) {#194
+                  class: "Illuminate\Queue\QueueServiceProvider"
+                  this: Illuminate\Queue\QueueServiceProvider {#189}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Queue/QueueServiceProvider.php"
+                  line: "197 to 209"
+                }
+                "shared" => true
+              ]
+              "Facade\Ignition\DumpRecorder\MultiDumpHandler" => array:2 [
+                "concrete" => Closure() {#208
+                  class: "Facade\Ignition\DumpRecorder\DumpRecorder"
+                  this: Facade\Ignition\DumpRecorder\DumpRecorder {#90
+                    #dumps: []
+                    #app: Illuminate\Foundation\Application {#2}
+                  }
+                  use: {
+                    $multiDumpHandler: Facade\Ignition\DumpRecorder\MultiDumpHandler {#207 …}
+                  }
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/facade/ignition/src/DumpRecorder/DumpRecorder.php"
+                  line: "29 to 31"
+                }
+                "shared" => true
+              ]
+              "cache" => array:2 [
+                "concrete" => Closure($app) {#225
+                  class: "Illuminate\Cache\CacheServiceProvider"
+                  this: Illuminate\Cache\CacheServiceProvider {#224}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Cache/CacheServiceProvider.php"
+                  line: "18 to 20"
+                }
+                "shared" => true
+              ]
+              "cache.store" => array:2 [
+                "concrete" => Closure($app) {#226
+                  class: "Illuminate\Cache\CacheServiceProvider"
+                  this: Illuminate\Cache\CacheServiceProvider {#224}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Cache/CacheServiceProvider.php"
+                  line: "22 to 24"
+                }
+                "shared" => true
+              ]
+              "cache.psr6" => array:2 [
+                "concrete" => Closure($app) {#227
+                  class: "Illuminate\Cache\CacheServiceProvider"
+                  this: Illuminate\Cache\CacheServiceProvider {#224}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Cache/CacheServiceProvider.php"
+                  line: "26 to 28"
+                }
+                "shared" => true
+              ]
+              "memcached.connector" => array:2 [
+                "concrete" => Closure() {#228
+                  class: "Illuminate\Cache\CacheServiceProvider"
+                  this: Illuminate\Cache\CacheServiceProvider {#224}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Cache/CacheServiceProvider.php"
+                  line: "30 to 32"
+                }
+                "shared" => true
+              ]
+              "Illuminate\Cache\RateLimiter" => array:2 [
+                "concrete" => Closure($container, $parameters = []) {#229
+                  class: "Illuminate\Container\Container"
+                  this: Illuminate\Foundation\Application {#2}
+                  use: {
+                    $abstract: "Illuminate\Cache\RateLimiter"
+                    $concrete: "Illuminate\Cache\RateLimiter"
+                  }
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Container/Container.php"
+                  line: "277 to 285"
+                }
+                "shared" => true
+              ]
+            ]
+            #methodBindings: []
+            #instances: array:36 [
+              "path" => "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/app"
+              "path.base" => "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app"
+              "path.lang" => "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/resources/lang"
+              "path.config" => "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/config"
+              "path.public" => "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/public"
+              "path.storage" => "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/storage"
+              "path.database" => "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/database"
+              "path.resources" => "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/resources"
+              "path.bootstrap" => "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/bootstrap"
+              "app" => Illuminate\Foundation\Application {#2}
+              "Illuminate\Container\Container" => Illuminate\Foundation\Application {#2}
+              "events" => Illuminate\Events\Dispatcher {#26}
+              "Illuminate\Contracts\Console\Kernel" => App\Console\Kernel {#28}
+              "config" => Illuminate\Config\Repository {#55
+                #items: array:17 [
+                  "app" => array:13 [
+                    "name" => "Laravel-By-TamLe"
+                    "env" => "local"
+                    "debug" => true
+                    "url" => "http://localhost"
+                    "asset_url" => null
+                    "timezone" => "Asia/Ho_Chi_Minh"
+                    "locale" => "en"
+                    "fallback_locale" => "en"
+                    "faker_locale" => "en_US"
+                    "key" => "base64:s1SmC1Ub3k46yR7cAALtjUgl/Wi/RUYFcrz52qQ15V0="
+                    "cipher" => "AES-256-CBC"
+                    "providers" => array:26 [
+                      0 => "Illuminate\Auth\AuthServiceProvider"
+                      1 => "Illuminate\Broadcasting\BroadcastServiceProvider"
+                      2 => "Illuminate\Bus\BusServiceProvider"
+                      3 => "Illuminate\Cache\CacheServiceProvider"
+                      4 => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+                      5 => "Illuminate\Cookie\CookieServiceProvider"
+                      6 => "Illuminate\Database\DatabaseServiceProvider"
+                      7 => "Illuminate\Encryption\EncryptionServiceProvider"
+                      8 => "Illuminate\Filesystem\FilesystemServiceProvider"
+                      9 => "Illuminate\Foundation\Providers\FoundationServiceProvider"
+                      10 => "Illuminate\Hashing\HashServiceProvider"
+                      11 => "Illuminate\Mail\MailServiceProvider"
+                      12 => "Illuminate\Notifications\NotificationServiceProvider"
+                      13 => "Illuminate\Pagination\PaginationServiceProvider"
+                      14 => "Illuminate\Pipeline\PipelineServiceProvider"
+                      15 => "Illuminate\Queue\QueueServiceProvider"
+                      16 => "Illuminate\Redis\RedisServiceProvider"
+                      17 => "Illuminate\Auth\Passwords\PasswordResetServiceProvider"
+                      18 => "Illuminate\Session\SessionServiceProvider"
+                      19 => "Illuminate\Translation\TranslationServiceProvider"
+                      20 => "Illuminate\Validation\ValidationServiceProvider"
+                      21 => "Illuminate\View\ViewServiceProvider"
+                      22 => "App\Providers\AppServiceProvider"
+                      23 => "App\Providers\AuthServiceProvider"
+                      24 => "App\Providers\EventServiceProvider"
+                      25 => "App\Providers\RouteServiceProvider"
+                    ]
+                    "aliases" => array:35 [
+                      "App" => "Illuminate\Support\Facades\App"
+                      "Arr" => "Illuminate\Support\Arr"
+                      "Artisan" => "Illuminate\Support\Facades\Artisan"
+                      "Auth" => "Illuminate\Support\Facades\Auth"
+                      "Blade" => "Illuminate\Support\Facades\Blade"
+                      "Broadcast" => "Illuminate\Support\Facades\Broadcast"
+                      "Bus" => "Illuminate\Support\Facades\Bus"
+                      "Cache" => "Illuminate\Support\Facades\Cache"
+                      "Config" => "Illuminate\Support\Facades\Config"
+                      "Cookie" => "Illuminate\Support\Facades\Cookie"
+                      "Crypt" => "Illuminate\Support\Facades\Crypt"
+                      "DB" => "Illuminate\Support\Facades\DB"
+                      "Eloquent" => "Illuminate\Database\Eloquent\Model"
+                      "Event" => "Illuminate\Support\Facades\Event"
+                      "File" => "Illuminate\Support\Facades\File"
+                      "Gate" => "Illuminate\Support\Facades\Gate"
+                      "Hash" => "Illuminate\Support\Facades\Hash"
+                      "Http" => "Illuminate\Support\Facades\Http"
+                      "Lang" => "Illuminate\Support\Facades\Lang"
+                      "Log" => "Illuminate\Support\Facades\Log"
+                      "Mail" => "Illuminate\Support\Facades\Mail"
+                      "Notification" => "Illuminate\Support\Facades\Notification"
+                      "Password" => "Illuminate\Support\Facades\Password"
+                      "Queue" => "Illuminate\Support\Facades\Queue"
+                      "Redirect" => "Illuminate\Support\Facades\Redirect"
+                      "Request" => "Illuminate\Support\Facades\Request"
+                      "Response" => "Illuminate\Support\Facades\Response"
+                      "Route" => "Illuminate\Support\Facades\Route"
+                      "Schema" => "Illuminate\Support\Facades\Schema"
+                      "Session" => "Illuminate\Support\Facades\Session"
+                      "Storage" => "Illuminate\Support\Facades\Storage"
+                      "Str" => "Illuminate\Support\Str"
+                      "URL" => "Illuminate\Support\Facades\URL"
+                      "Validator" => "Illuminate\Support\Facades\Validator"
+                      "View" => "Illuminate\Support\Facades\View"
+                    ]
+                  ]
+                  "auth" => array:5 [
+                    "defaults" => array:2 [
+                      "guard" => "web"
+                      "passwords" => "users"
+                    ]
+                    "guards" => array:2 [
+                      "web" => array:2 [
+                        "driver" => "session"
+                        "provider" => "users"
+                      ]
+                      "api" => array:3 [
+                        "driver" => "token"
+                        "provider" => "users"
+                        "hash" => false
+                      ]
+                    ]
+                    "providers" => array:1 [
+                      "users" => array:2 [
+                        "driver" => "eloquent"
+                        "model" => "App\Models\User"
+                      ]
+                    ]
+                    "passwords" => array:1 [
+                      "users" => array:4 [
+                        "provider" => "users"
+                        "table" => "password_resets"
+                        "expire" => 60
+                        "throttle" => 60
+                      ]
+                    ]
+                    "password_timeout" => 10800
+                  ]
+                  "broadcasting" => array:2 [
+                    "default" => "log"
+                    "connections" => array:5 [
+                      "pusher" => array:5 [
+                        "driver" => "pusher"
+                        "key" => ""
+                        "secret" => ""
+                        "app_id" => ""
+                        "options" => array:2 [
+                          "cluster" => "mt1"
+                          "useTLS" => true
+                        ]
+                      ]
+                      "ably" => array:2 [
+                        "driver" => "ably"
+                        "key" => null
+                      ]
+                      "redis" => array:2 [
+                        "driver" => "redis"
+                        "connection" => "default"
+                      ]
+                      "log" => array:1 [
+                        "driver" => "log"
+                      ]
+                      "null" => array:1 [
+                        "driver" => "null"
+                      ]
+                    ]
+                  ]
+                  "cache" => array:3 [
+                    "default" => "file"
+                    "stores" => array:7 [
+                      "apc" => array:1 [
+                        "driver" => "apc"
+                      ]
+                      "array" => array:2 [
+                        "driver" => "array"
+                        "serialize" => false
+                      ]
+                      "database" => array:3 [
+                        "driver" => "database"
+                        "table" => "cache"
+                        "connection" => null
+                      ]
+                      "file" => array:2 [
+                        "driver" => "file"
+                        "path" => "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/storage/framework/cache/data"
+                      ]
+                      "memcached" => array:5 [
+                        "driver" => "memcached"
+                        "persistent_id" => null
+                        "sasl" => array:2 [
+                          0 => null
+                          1 => null
+                        ]
+                        "options" => []
+                        "servers" => array:1 [
+                          0 => array:3 [
+                            "host" => "memcached"
+                            "port" => 11211
+                            "weight" => 100
+                          ]
+                        ]
+                      ]
+                      "redis" => array:2 [
+                        "driver" => "redis"
+                        "connection" => "cache"
+                      ]
+                      "dynamodb" => array:6 [
+                        "driver" => "dynamodb"
+                        "key" => ""
+                        "secret" => ""
+                        "region" => "us-east-1"
+                        "table" => "cache"
+                        "endpoint" => null
+                      ]
+                    ]
+                    "prefix" => "laravel_by_tamle_cache"
+                  ]
+                  "cors" => array:8 [
+                    "paths" => array:2 [
+                      0 => "api/*"
+                      1 => "sanctum/csrf-cookie"
+                    ]
+                    "allowed_methods" => array:1 [
+                      0 => "*"
+                    ]
+                    "allowed_origins" => array:1 [
+                      0 => "*"
+                    ]
+                    "allowed_origins_patterns" => []
+                    "allowed_headers" => array:1 [
+                      0 => "*"
+                    ]
+                    "exposed_headers" => []
+                    "max_age" => 0
+                    "supports_credentials" => false
+                  ]
+                  "database" => array:4 [
+                    "default" => "mysql"
+                    "connections" => array:4 [
+                      "sqlite" => array:5 [
+                        "driver" => "sqlite"
+                        "url" => null
+                        "database" => "mvc_shop"
+                        "prefix" => ""
+                        "foreign_key_constraints" => true
+                      ]
+                      "mysql" => array:15 [
+                        "driver" => "mysql"
+                        "url" => null
+                        "host" => "mysql"
+                        "port" => "3306"
+                        "database" => "mvc_shop"
+                        "username" => "root"
+                        "password" => "0979029556"
+                        "unix_socket" => ""
+                        "charset" => "utf8mb4"
+                        "collation" => "utf8mb4_unicode_ci"
+                        "prefix" => ""
+                        "prefix_indexes" => true
+                        "strict" => true
+                        "engine" => null
+                        "options" => []
+                      ]
+                      "pgsql" => array:12 [
+                        "driver" => "pgsql"
+                        "url" => null
+                        "host" => "mysql"
+                        "port" => "3306"
+                        "database" => "mvc_shop"
+                        "username" => "root"
+                        "password" => "0979029556"
+                        "charset" => "utf8"
+                        "prefix" => ""
+                        "prefix_indexes" => true
+                        "schema" => "public"
+                        "sslmode" => "prefer"
+                      ]
+                      "sqlsrv" => array:10 [
+                        "driver" => "sqlsrv"
+                        "url" => null
+                        "host" => "mysql"
+                        "port" => "3306"
+                        "database" => "mvc_shop"
+                        "username" => "root"
+                        "password" => "0979029556"
+                        "charset" => "utf8"
+                        "prefix" => ""
+                        "prefix_indexes" => true
+                      ]
+                    ]
+                    "migrations" => "migrations"
+                    "redis" => array:4 [
+                      "client" => "phpredis"
+                      "options" => array:2 [
+                        "cluster" => "redis"
+                        "prefix" => "laravel_by_tamle_database_"
+                      ]
+                      "default" => array:5 [
+                        "url" => null
+                        "host" => "redis"
+                        "password" => null
+                        "port" => "6379"
+                        "database" => "0"
+                      ]
+                      "cache" => array:5 [
+                        "url" => null
+                        "host" => "redis"
+                        "password" => null
+                        "port" => "6379"
+                        "database" => "1"
+                      ]
+                    ]
+                  ]
+                  "filesystems" => array:3 [
+                    "default" => "local"
+                    "disks" => array:3 [
+                      "local" => array:2 [
+                        "driver" => "local"
+                        "root" => "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/storage/app"
+                      ]
+                      "public" => array:4 [
+                        "driver" => "local"
+                        "root" => "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/storage/app/public"
+                        "url" => "http://localhost/storage"
+                        "visibility" => "public"
+                      ]
+                      "s3" => array:7 [
+                        "driver" => "s3"
+                        "key" => ""
+                        "secret" => ""
+                        "region" => "us-east-1"
+                        "bucket" => ""
+                        "url" => null
+                        "endpoint" => null
+                      ]
+                    ]
+                    "links" => array:1 [
+                      "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/public/storage" => "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/storage/app/public"
+                    ]
+                  ]
+                  "hashing" => array:3 [
+                    "driver" => "bcrypt"
+                    "bcrypt" => array:1 [
+                      "rounds" => 10
+                    ]
+                    "argon" => array:3 [
+                      "memory" => 1024
+                      "threads" => 2
+                      "time" => 2
+                    ]
+                  ]
+                  "logging" => array:2 [
+                    "default" => "stack"
+                    "channels" => array:10 [
+                      "stack" => array:3 [
+                        "driver" => "stack"
+                        "channels" => array:1 [
+                          0 => "single"
+                        ]
+                        "ignore_exceptions" => false
+                      ]
+                      "single" => array:3 [
+                        "driver" => "single"
+                        "path" => "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/storage/logs/laravel.log"
+                        "level" => "debug"
+                      ]
+                      "daily" => array:4 [
+                        "driver" => "daily"
+                        "path" => "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/storage/logs/laravel.log"
+                        "level" => "debug"
+                        "days" => 14
+                      ]
+                      "slack" => array:5 [
+                        "driver" => "slack"
+                        "url" => null
+                        "username" => "Laravel Log"
+                        "emoji" => ":boom:"
+                        "level" => "debug"
+                      ]
+                      "papertrail" => array:4 [
+                        "driver" => "monolog"
+                        "level" => "debug"
+                        "handler" => "Monolog\Handler\SyslogUdpHandler"
+                        "handler_with" => array:2 [
+                          "host" => null
+                          "port" => null
+                        ]
+                      ]
+                      "stderr" => array:4 [
+                        "driver" => "monolog"
+                        "handler" => "Monolog\Handler\StreamHandler"
+                        "formatter" => null
+                        "with" => array:1 [
+                          "stream" => "php://stderr"
+                        ]
+                      ]
+                      "syslog" => array:2 [
+                        "driver" => "syslog"
+                        "level" => "debug"
+                      ]
+                      "errorlog" => array:2 [
+                        "driver" => "errorlog"
+                        "level" => "debug"
+                      ]
+                      "null" => array:2 [
+                        "driver" => "monolog"
+                        "handler" => "Monolog\Handler\NullHandler"
+                      ]
+                      "emergency" => array:1 [
+                        "path" => "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/storage/logs/laravel.log"
+                      ]
+                    ]
+                  ]
+                  "mail" => array:4 [
+                    "default" => "smtp"
+                    "mailers" => array:7 [
+                      "smtp" => array:8 [
+                        "transport" => "smtp"
+                        "host" => "mailhog"
+                        "port" => "1025"
+                        "encryption" => null
+                        "username" => null
+                        "password" => null
+                        "timeout" => null
+                        "auth_mode" => null
+                      ]
+                      "ses" => array:1 [
+                        "transport" => "ses"
+                      ]
+                      "mailgun" => array:1 [
+                        "transport" => "mailgun"
+                      ]
+                      "postmark" => array:1 [
+                        "transport" => "postmark"
+                      ]
+                      "sendmail" => array:2 [
+                        "transport" => "sendmail"
+                        "path" => "/usr/sbin/sendmail -bs"
+                      ]
+                      "log" => array:2 [
+                        "transport" => "log"
+                        "channel" => null
+                      ]
+                      "array" => array:1 [
+                        "transport" => "array"
+                      ]
+                    ]
+                    "from" => array:2 [
+                      "address" => null
+                      "name" => "Laravel-By-TamLe"
+                    ]
+                    "markdown" => array:2 [
+                      "theme" => "default"
+                      "paths" => array:1 [
+                        0 => "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/resources/views/vendor/mail"
+                      ]
+                    ]
+                  ]
+                  "queue" => array:3 [
+                    "default" => "sync"
+                    "connections" => array:5 [
+                      "sync" => array:1 [
+                        "driver" => "sync"
+                      ]
+                      "database" => array:4 [
+                        "driver" => "database"
+                        "table" => "jobs"
+                        "queue" => "default"
+                        "retry_after" => 90
+                      ]
+                      "beanstalkd" => array:5 [
+                        "driver" => "beanstalkd"
+                        "host" => "localhost"
+                        "queue" => "default"
+                        "retry_after" => 90
+                        "block_for" => 0
+                      ]
+                      "sqs" => array:7 [
+                        "driver" => "sqs"
+                        "key" => ""
+                        "secret" => ""
+                        "prefix" => "https://sqs.us-east-1.amazonaws.com/your-account-id"
+                        "queue" => "your-queue-name"
+                        "suffix" => null
+                        "region" => "us-east-1"
+                      ]
+                      "redis" => array:5 [
+                        "driver" => "redis"
+                        "connection" => "default"
+                        "queue" => "default"
+                        "retry_after" => 90
+                        "block_for" => null
+                      ]
+                    ]
+                    "failed" => array:3 [
+                      "driver" => "database-uuids"
+                      "database" => "mysql"
+                      "table" => "failed_jobs"
+                    ]
+                  ]
+                  "services" => array:3 [
+                    "mailgun" => array:3 [
+                      "domain" => null
+                      "secret" => null
+                      "endpoint" => "api.mailgun.net"
+                    ]
+                    "postmark" => array:1 [
+                      "token" => null
+                    ]
+                    "ses" => array:3 [
+                      "key" => ""
+                      "secret" => ""
+                      "region" => "us-east-1"
+                    ]
+                  ]
+                  "session" => array:15 [
+                    "driver" => "file"
+                    "lifetime" => "120"
+                    "expire_on_close" => false
+                    "encrypt" => false
+                    "files" => "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/storage/framework/sessions"
+                    "connection" => null
+                    "table" => "sessions"
+                    "store" => null
+                    "lottery" => array:2 [
+                      0 => 2
+                      1 => 100
+                    ]
+                    "cookie" => "laravel_by_tamle_session"
+                    "path" => "/"
+                    "domain" => null
+                    "secure" => null
+                    "http_only" => true
+                    "same_site" => "lax"
+                  ]
+                  "view" => array:2 [
+                    "paths" => array:1 [
+                      0 => "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/resources/views"
+                    ]
+                    "compiled" => "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/storage/framework/views"
+                  ]
+                  "flare" => array:3 [
+                    "key" => null
+                    "reporting" => array:7 [
+                      "anonymize_ips" => true
+                      "collect_git_information" => false
+                      "report_queries" => true
+                      "maximum_number_of_collected_queries" => 200
+                      "report_query_bindings" => true
+                      "report_view_data" => true
+                      "grouping_type" => null
+                    ]
+                    "send_logs_as_events" => true
+                  ]
+                  "ignition" => array:9 [
+                    "editor" => "phpstorm"
+                    "theme" => "light"
+                    "enable_share_button" => true
+                    "register_commands" => false
+                    "ignored_solution_providers" => array:1 [
+                      0 => "Facade\Ignition\SolutionProviders\MissingPackageSolutionProvider"
+                    ]
+                    "enable_runnable_solutions" => null
+                    "remote_sites_path" => ""
+                    "local_sites_path" => ""
+                    "housekeeping_endpoint_prefix" => "_ignition"
+                  ]
+                  "trustedproxy" => array:2 [
+                    "proxies" => null
+                    "headers" => 94
+                  ]
+                ]
+              }
+              "Illuminate\Foundation\PackageManifest" => Illuminate\Foundation\PackageManifest {#54
+                +files: Illuminate\Filesystem\Filesystem {#156}
+                +basePath: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app"
+                +vendorPath: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor"
+                +manifestPath: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/bootstrap/cache/packages.php"
+                +manifest: array:7 [
+                  "facade/ignition" => array:2 [
+                    "providers" => array:1 [
+                      0 => "Facade\Ignition\IgnitionServiceProvider"
+                    ]
+                    "aliases" => array:1 [
+                      "Flare" => "Facade\Ignition\Facades\Flare"
+                    ]
+                  ]
+                  "fideloper/proxy" => array:1 [
+                    "providers" => array:1 [
+                      0 => "Fideloper\Proxy\TrustedProxyServiceProvider"
+                    ]
+                  ]
+                  "fruitcake/laravel-cors" => array:1 [
+                    "providers" => array:1 [
+                      0 => "Fruitcake\Cors\CorsServiceProvider"
+                    ]
+                  ]
+                  "laravel/sail" => array:1 [
+                    "providers" => array:1 [
+                      0 => "Laravel\Sail\SailServiceProvider"
+                    ]
+                  ]
+                  "laravel/tinker" => array:1 [
+                    "providers" => array:1 [
+                      0 => "Laravel\Tinker\TinkerServiceProvider"
+                    ]
+                  ]
+                  "nesbot/carbon" => array:1 [
+                    "providers" => array:1 [
+                      0 => "Carbon\Laravel\ServiceProvider"
+                    ]
+                  ]
+                  "nunomaduro/collision" => array:1 [
+                    "providers" => array:1 [
+                      0 => "NunoMaduro\Collision\Adapters\Laravel\CollisionServiceProvider"
+                    ]
+                  ]
+                ]
+              }
+              "request" => Illuminate\Http\Request {#75
+                #json: null
+                #convertedFiles: null
+                #userResolver: null
+                #routeResolver: null
+                +attributes: Symfony\Component\HttpFoundation\ParameterBag {#155
+                  #parameters: []
+                }
+                +request: Symfony\Component\HttpFoundation\ParameterBag {#157
+                  #parameters: []
+                }
+                +query: Symfony\Component\HttpFoundation\InputBag {#66
+                  #parameters: []
+                }
+                +server: Symfony\Component\HttpFoundation\ServerBag {#152
+                  #parameters: array:82 [
+                    "SERVER_NAME" => "localhost"
+                    "SERVER_PORT" => 80
+                    "HTTP_HOST" => "localhost"
+                    "HTTP_USER_AGENT" => "Symfony"
+                    "HTTP_ACCEPT" => "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+                    "HTTP_ACCEPT_LANGUAGE" => "en-us,en;q=0.5"
+                    "HTTP_ACCEPT_CHARSET" => "ISO-8859-1,utf-8;q=0.7,*;q=0.7"
+                    "REMOTE_ADDR" => "127.0.0.1"
+                    "SCRIPT_NAME" => "artisan"
+                    "SCRIPT_FILENAME" => "artisan"
+                    "SERVER_PROTOCOL" => "HTTP/1.1"
+                    "REQUEST_TIME" => 1607757517
+                    "TERM_PROGRAM" => "Apple_Terminal"
+                    "SHELL" => "/bin/zsh"
+                    "TERM" => "xterm-256color"
+                    "TMPDIR" => "/var/folders/vx/82n1_sln5pq1sdq9j49b1sym0000gn/T/"
+                    "TERM_PROGRAM_VERSION" => "440"
+                    "TERM_SESSION_ID" => "17F74B94-8ED1-475A-BCA4-1E086D8ED1D2"
+                    "USER" => "letam"
+                    "SSH_AUTH_SOCK" => "/private/tmp/com.apple.launchd.fSLnyUFL2l/Listeners"
+                    "PATH" => "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin"
+                    "__CFBundleIdentifier" => "com.apple.Terminal"
+                    "PWD" => "/Users/letam/webroot/example-app"
+                    "XPC_FLAGS" => "0x0"
+                    "XPC_SERVICE_NAME" => "0"
+                    "SHLVL" => "1"
+                    "HOME" => "/Users/letam"
+                    "LOGNAME" => "letam"
+                    "OLDPWD" => "/Users/letam/webroot"
+                    "LC_CTYPE" => "UTF-8"
+                    "_" => "/usr/local/bin/php"
+                    "__CF_USER_TEXT_ENCODING" => "0x1F5:0x1E:0x61"
+                    "PHP_SELF" => "artisan"
+                    "PATH_TRANSLATED" => "artisan"
+                    "DOCUMENT_ROOT" => ""
+                    "REQUEST_TIME_FLOAT" => 1607757517.5233
+                    "argv" => array:2 [
+                      0 => "artisan"
+                      1 => "serv"
+                    ]
+                    "argc" => 2
+                    "APP_NAME" => "Laravel-By-TamLe"
+                    "APP_ENV" => "local"
+                    "APP_KEY" => "base64:s1SmC1Ub3k46yR7cAALtjUgl/Wi/RUYFcrz52qQ15V0="
+                    "APP_DEBUG" => "true"
+                    "APP_URL" => "http://localhost"
+                    "LOG_CHANNEL" => "stack"
+                    "LOG_LEVEL" => "debug"
+                    "DB_CONNECTION" => "mysql"
+                    "DB_HOST" => "mysql"
+                    "DB_PORT" => "3306"
+                    "DB_DATABASE" => "mvc_shop"
+                    "DB_USERNAME" => "root"
+                    "DB_PASSWORD" => "0979029556"
+                    "BROADCAST_DRIVER" => "log"
+                    "CACHE_DRIVER" => "file"
+                    "QUEUE_CONNECTION" => "sync"
+                    "SESSION_DRIVER" => "file"
+                    "SESSION_LIFETIME" => "120"
+                    "MEMCACHED_HOST" => "memcached"
+                    "REDIS_HOST" => "redis"
+                    "REDIS_PASSWORD" => "null"
+                    "REDIS_PORT" => "6379"
+                    "MAIL_MAILER" => "smtp"
+                    "MAIL_HOST" => "mailhog"
+                    "MAIL_PORT" => "1025"
+                    "MAIL_USERNAME" => "null"
+                    "MAIL_PASSWORD" => "null"
+                    "MAIL_ENCRYPTION" => "null"
+                    "MAIL_FROM_ADDRESS" => "null"
+                    "MAIL_FROM_NAME" => "Laravel-By-TamLe"
+                    "AWS_ACCESS_KEY_ID" => ""
+                    "AWS_SECRET_ACCESS_KEY" => ""
+                    "AWS_DEFAULT_REGION" => "us-east-1"
+                    "AWS_BUCKET" => ""
+                    "PUSHER_APP_ID" => ""
+                    "PUSHER_APP_KEY" => ""
+                    "PUSHER_APP_SECRET" => ""
+                    "PUSHER_APP_CLUSTER" => "mt1"
+                    "MIX_PUSHER_APP_KEY" => ""
+                    "MIX_PUSHER_APP_CLUSTER" => "mt1"
+                    "PATH_INFO" => ""
+                    "REQUEST_METHOD" => "GET"
+                    "REQUEST_URI" => "/"
+                    "QUERY_STRING" => ""
+                  ]
+                }
+                +files: Symfony\Component\HttpFoundation\FileBag {#148
+                  #parameters: []
+                }
+                +cookies: Symfony\Component\HttpFoundation\InputBag {#158
+                  #parameters: []
+                }
+                +headers: Symfony\Component\HttpFoundation\HeaderBag {#150
+                  #headers: array:5 [
+                    "host" => array:1 [
+                      0 => "localhost"
+                    ]
+                    "user-agent" => array:1 [
+                      0 => "Symfony"
+                    ]
+                    "accept" => array:1 [
+                      0 => "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+                    ]
+                    "accept-language" => array:1 [
+                      0 => "en-us,en;q=0.5"
+                    ]
+                    "accept-charset" => array:1 [
+                      0 => "ISO-8859-1,utf-8;q=0.7,*;q=0.7"
+                    ]
+                  ]
+                  #cacheControl: []
+                }
+                #content: null
+                #languages: null
+                #charsets: null
+                #encodings: null
+                #acceptableContentTypes: null
+                #pathInfo: null
+                #requestUri: null
+                #baseUrl: null
+                #basePath: null
+                #method: null
+                #format: null
+                #session: null
+                #locale: null
+                #defaultLocale: "en"
+                -preferredFormat: null
+                -isHostValid: true
+                -isForwardedValid: true
+                -isSafeContentPreferred: null
+                pathInfo: "/"
+                requestUri: "/"
+                baseUrl: ""
+                basePath: ""
+                method: "GET"
+                format: "html"
+              }
+              "Facade\Ignition\LogRecorder\LogRecorder" => Facade\Ignition\LogRecorder\LogRecorder {#88}
+              "Facade\Ignition\DumpRecorder\DumpRecorder" => Facade\Ignition\DumpRecorder\DumpRecorder {#90}
+              "Facade\Ignition\QueryRecorder\QueryRecorder" => Facade\Ignition\QueryRecorder\QueryRecorder {#85}
+              "flare.http" => Facade\FlareClient\Http\Client {#84
+                -apiToken: null
+                -apiSecret: null
+                -baseUrl: "https://flareapp.io/api"
+                -timeout: 10
+              }
+              "Facade\FlareClient\Flare" => Facade\FlareClient\Flare {#78
+                -client: Facade\FlareClient\Http\Client {#84}
+                -api: Facade\FlareClient\Api {#81
+                  -client: Facade\FlareClient\Http\Client {#84}
+                  -queue: []
+                }
+                -middleware: array:8 [
+                  0 => Facade\FlareClient\Middleware\AddGlows {#72
+                    -recorder: Facade\FlareClient\Glows\Recorder {#80
+                      -glows: []
+                    }
+                  }
+                  1 => Facade\FlareClient\Middleware\AnonymizeIp {#71}
+                  2 => Facade\Ignition\Middleware\SetNotifierName {#70}
+                  3 => Facade\Ignition\Middleware\AddEnvironmentInformation {#153}
+                  4 => Facade\Ignition\Middleware\AddLogs {#76
+                    #logRecorder: Facade\Ignition\LogRecorder\LogRecorder {#88}
+                  }
+                  5 => Facade\Ignition\Middleware\AddDumps {#149
+                    #dumpRecorder: Facade\Ignition\DumpRecorder\DumpRecorder {#90}
+                  }
+                  6 => Facade\Ignition\Middleware\AddQueries {#83
+                    #queryRecorder: Facade\Ignition\QueryRecorder\QueryRecorder {#85}
+                  }
+                  7 => Facade\Ignition\Middleware\AddSolutions {#159
+                    #solutionProviderRepository: Facade\Ignition\SolutionProviders\SolutionProviderRepository {#162
+                      #solutionProviders: Illuminate\Support\Collection {#161
+                        #items: array:17 [
+                          0 => "Facade\Ignition\SolutionProviders\IncorrectValetDbCredentialsSolutionProvider"
+                          1 => "Facade\Ignition\SolutionProviders\MissingAppKeySolutionProvider"
+                          2 => "Facade\Ignition\SolutionProviders\DefaultDbNameSolutionProvider"
+                          3 => "Facade\Ignition\SolutionProviders\BadMethodCallSolutionProvider"
+                          4 => "Facade\Ignition\SolutionProviders\TableNotFoundSolutionProvider"
+                          5 => "Facade\Ignition\SolutionProviders\MissingImportSolutionProvider"
+                          6 => "Facade\Ignition\SolutionProviders\MissingPackageSolutionProvider"
+                          7 => "Facade\Ignition\SolutionProviders\InvalidRouteActionSolutionProvider"
+                          8 => "Facade\Ignition\SolutionProviders\ViewNotFoundSolutionProvider"
+                          9 => "Facade\Ignition\SolutionProviders\UndefinedVariableSolutionProvider"
+                          10 => "Facade\Ignition\SolutionProviders\MergeConflictSolutionProvider"
+                          11 => "Facade\Ignition\SolutionProviders\RunningLaravelDuskInProductionProvider"
+                          12 => "Facade\Ignition\SolutionProviders\MissingColumnSolutionProvider"
+                          13 => "Facade\Ignition\SolutionProviders\UnknownValidationSolutionProvider"
+                          14 => "Facade\Ignition\SolutionProviders\UndefinedPropertySolutionProvider"
+                          15 => "Facade\Ignition\SolutionProviders\MissingMixManifestSolutionProvider"
+                          16 => "Facade\Ignition\SolutionProviders\MissingLivewireComponentSolutionProvider"
+                        ]
+                      }
+                    }
+                  }
+                ]
+                -recorder: Facade\FlareClient\Glows\Recorder {#80}
+                -applicationPath: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app"
+                -container: Illuminate\Foundation\Application {#2}
+                -contextDetector: Facade\Ignition\Context\LaravelContextDetector {#79}
+                -previousExceptionHandler: null
+                -previousErrorHandler: null
+                -messageLevel: null
+                -stage: "local"
+                -userProvidedContext: []
+              }
+              "Facade\IgnitionContracts\SolutionProviderRepository" => Facade\Ignition\SolutionProviders\SolutionProviderRepository {#162}
+              "Illuminate\Contracts\Debug\ExceptionHandler" => NunoMaduro\Collision\Adapters\Laravel\ExceptionHandler {#21
+                #appExceptionHandler: App\Exceptions\Handler {#166}
+                #container: Illuminate\Foundation\Application {#2}
+              }
+              "db.factory" => Illuminate\Database\Connectors\ConnectionFactory {#65
+                #container: Illuminate\Foundation\Application {#2}
+              }
+              "db" => Illuminate\Database\DatabaseManager {#139
+                #app: Illuminate\Foundation\Application {#2}
+                #factory: Illuminate\Database\Connectors\ConnectionFactory {#65}
+                #connections: []
+                #extensions: []
+                #reconnector: Closure($connection) {#144
+                  class: "Illuminate\Database\DatabaseManager"
+                  this: Illuminate\Database\DatabaseManager {#139}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php"
+                  line: "64 to 66"
+                }
+              }
+              "view.engine.resolver" => Illuminate\View\Engines\EngineResolver {#177}
+              "files" => Illuminate\Filesystem\Filesystem {#182}
+              "blade.compiler" => Illuminate\View\Compilers\BladeCompiler {#184
+                #extensions: []
+                #customDirectives: []
+                #conditions: []
+                #precompilers: []
+                #path: null
+                #compilers: array:3 [
+                  0 => "Extensions"
+                  1 => "Statements"
+                  2 => "Echos"
+                ]
+                #rawTags: array:2 [
+                  0 => "{!!"
+                  1 => "!!}"
+                ]
+                #contentTags: array:2 [
+                  0 => "{{"
+                  1 => "}}"
+                ]
+                #escapedTags: array:2 [
+                  0 => "{{{"
+                  1 => "}}}"
+                ]
+                #echoFormat: "e(%s)"
+                #footer: []
+                #rawBlocks: []
+                #classComponentAliases: array:1 [
+                  "dynamic-component" => "Illuminate\View\DynamicComponent"
+                ]
+                #classComponentNamespaces: []
+                #compilesComponentTags: true
+                #files: Illuminate\Filesystem\Filesystem {#182}
+                #cachePath: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/storage/framework/views"
+                #firstCaseInSwitch: true
+                -encodingOptions: 15
+                #lastSection: null
+                #forElseCounter: 0
+              }
+              "log" => Illuminate\Log\LogManager {#183
+                #app: Illuminate\Foundation\Application {#2}
+                #channels: []
+                #customCreators: array:1 [
+                  "flare" => Closure($app) {#186
+                    class: "Illuminate\Log\LogManager"
+                    this: Illuminate\Log\LogManager {#183}
+                    file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/facade/ignition/src/IgnitionServiceProvider.php"
+                    line: "261 to 263"
+                  }
+                ]
+                #dateFormat: "Y-m-d H:i:s"
+                #levels: array:8 [
+                  "debug" => 100
+                  "info" => 200
+                  "notice" => 250
+                  "warning" => 300
+                  "error" => 400
+                  "critical" => 500
+                  "alert" => 550
+                  "emergency" => 600
+                ]
+              }
+              "queue" => Illuminate\Queue\QueueManager {#196
+                #app: Illuminate\Foundation\Application {#2}
+                #connections: []
+                #connectors: array:6 [
+                  "null" => Closure() {#198
+                    class: "Illuminate\Queue\QueueServiceProvider"
+                    this: Illuminate\Queue\QueueServiceProvider {#189}
+                    file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Queue/QueueServiceProvider.php"
+                    line: "87 to 89"
+                  }
+                  "sync" => Closure() {#199
+                    class: "Illuminate\Queue\QueueServiceProvider"
+                    this: Illuminate\Queue\QueueServiceProvider {#189}
+                    file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Queue/QueueServiceProvider.php"
+                    line: "100 to 102"
+                  }
+                  "database" => Closure() {#200
+                    class: "Illuminate\Queue\QueueServiceProvider"
+                    this: Illuminate\Queue\QueueServiceProvider {#189}
+                    file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Queue/QueueServiceProvider.php"
+                    line: "113 to 115"
+                  }
+                  "redis" => Closure() {#201
+                    class: "Illuminate\Queue\QueueServiceProvider"
+                    this: Illuminate\Queue\QueueServiceProvider {#189}
+                    file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Queue/QueueServiceProvider.php"
+                    line: "126 to 128"
+                  }
+                  "beanstalkd" => Closure() {#202
+                    class: "Illuminate\Queue\QueueServiceProvider"
+                    this: Illuminate\Queue\QueueServiceProvider {#189}
+                    file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Queue/QueueServiceProvider.php"
+                    line: "139 to 141"
+                  }
+                  "sqs" => Closure() {#203
+                    class: "Illuminate\Queue\QueueServiceProvider"
+                    this: Illuminate\Queue\QueueServiceProvider {#189}
+                    file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Queue/QueueServiceProvider.php"
+                    line: "152 to 154"
+                  }
+                ]
+              }
+              "date" => Illuminate\Support\DateFactory {#218}
+              "cache" => Illuminate\Cache\CacheManager {#234
+                #app: Illuminate\Foundation\Application {#2}
+                #stores: array:1 [
+                  "file" => Illuminate\Cache\Repository {#236
+                    #store: Illuminate\Cache\FileStore {#235
+                      #files: Illuminate\Filesystem\Filesystem {#182}
+                      #directory: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/storage/framework/cache/data"
+                      #filePermission: null
+                    }
+                    #events: Illuminate\Events\Dispatcher {#26}
+                    #default: 3600
+                  }
+                ]
+                #customCreators: []
+              }
+              "cache.store" => Illuminate\Cache\Repository {#236}
+              "Illuminate\Cache\RateLimiter" => Illuminate\Cache\RateLimiter {#237
+                #cache: Illuminate\Cache\Repository {#236}
+                #limiters: array:1 [
+                  "api" => Closure(Request $request) {#223
+                    class: "App\Providers\RouteServiceProvider"
+                    this: App\Providers\RouteServiceProvider {#171}
+                    file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/app/Providers/RouteServiceProvider.php"
+                    line: "59 to 61"
+                  }
+                ]
+              }
+              "router" => Illuminate\Routing\Router {#231
+                #events: Illuminate\Events\Dispatcher {#26}
+                #container: Illuminate\Foundation\Application {#2}
+                #routes: Illuminate\Routing\RouteCollection {#238
+                  #routes: array:2 [
+                    "GET" => array:1 [
+                      "api/user" => Illuminate\Routing\Route {#243
+                        +uri: "api/user"
+                        +methods: array:2 [
+                          0 => "GET"
+                          1 => "HEAD"
+                        ]
+                        +action: array:5 [
+                          "middleware" => array:2 [
+                            0 => "api"
+                            1 => "auth:api"
+                          ]
+                          "uses" => Closure(Request $request) {#242
+                            class: "Illuminate\Routing\RouteFileRegistrar"
+                            this: Illuminate\Routing\RouteFileRegistrar {#240 …}
+                            file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/routes/api.php"
+                            line: "17 to 19"
+                          }
+                          "namespace" => null
+                          "prefix" => "api"
+                          "where" => []
+                        ]
+                        +isFallback: false
+                        +controller: null
+                        +defaults: []
+                        +wheres: []
+                        +parameters: null
+                        +parameterNames: null
+                        #originalParameters: null
+                        #lockSeconds: null
+                        #waitSeconds: null
+                        +computedMiddleware: null
+                        +compiled: null
+                        #router: Illuminate\Routing\Router {#231}
+                        #container: Illuminate\Foundation\Application {#2}
+                        #bindingFields: []
+                      }
+                    ]
+                    "HEAD" => array:1 [
+                      "api/user" => Illuminate\Routing\Route {#243}
+                    ]
+                  ]
+                  #allRoutes: array:1 [
+                    "HEADapi/user" => Illuminate\Routing\Route {#243}
+                  ]
+                  #nameList: []
+                  #actionList: []
+                }
+                #current: null
+                #currentRequest: null
+                #middleware: []
+                #middlewareGroups: []
+                +middlewarePriority: []
+                #binders: []
+                #patterns: []
+                #groupStack: array:1 [
+                  0 => array:2 [
+                    "middleware" => array:1 [
+                      0 => "web"
+                    ]
+                    "namespace" => null
+                  ]
+                ]
+              }
+              "view" => Illuminate\View\Factory {#245}
+            ]
+            #aliases: array:76 [
+              "Illuminate\Foundation\Application" => "app"
+              "Illuminate\Contracts\Container\Container" => "app"
+              "Illuminate\Contracts\Foundation\Application" => "app"
+              "Psr\Container\ContainerInterface" => "app"
+              "Illuminate\Auth\AuthManager" => "auth"
+              "Illuminate\Contracts\Auth\Factory" => "auth"
+              "Illuminate\Contracts\Auth\Guard" => "auth.driver"
+              "Illuminate\View\Compilers\BladeCompiler" => "blade.compiler"
+              "Illuminate\Cache\CacheManager" => "cache"
+              "Illuminate\Contracts\Cache\Factory" => "cache"
+              "Illuminate\Cache\Repository" => "cache.store"
+              "Illuminate\Contracts\Cache\Repository" => "cache.store"
+              "Psr\SimpleCache\CacheInterface" => "cache.store"
+              "Symfony\Component\Cache\Adapter\Psr16Adapter" => "cache.psr6"
+              "Symfony\Component\Cache\Adapter\AdapterInterface" => "cache.psr6"
+              "Psr\Cache\CacheItemPoolInterface" => "cache.psr6"
+              "Illuminate\Config\Repository" => "config"
+              "Illuminate\Contracts\Config\Repository" => "config"
+              "Illuminate\Cookie\CookieJar" => "cookie"
+              "Illuminate\Contracts\Cookie\Factory" => "cookie"
+              "Illuminate\Contracts\Cookie\QueueingFactory" => "cookie"
+              "Illuminate\Encryption\Encrypter" => "encrypter"
+              "Illuminate\Contracts\Encryption\Encrypter" => "encrypter"
+              "Illuminate\Database\DatabaseManager" => "db"
+              "Illuminate\Database\ConnectionResolverInterface" => "db"
+              "Illuminate\Database\Connection" => "db.connection"
+              "Illuminate\Database\ConnectionInterface" => "db.connection"
+              "Illuminate\Events\Dispatcher" => "events"
+              "Illuminate\Contracts\Events\Dispatcher" => "events"
+              "Illuminate\Filesystem\Filesystem" => "files"
+              "Illuminate\Filesystem\FilesystemManager" => "filesystem"
+              "Illuminate\Contracts\Filesystem\Factory" => "filesystem"
+              "Illuminate\Contracts\Filesystem\Filesystem" => "filesystem.disk"
+              "Illuminate\Contracts\Filesystem\Cloud" => "filesystem.cloud"
+              "Illuminate\Hashing\HashManager" => "hash"
+              "Illuminate\Contracts\Hashing\Hasher" => "hash.driver"
+              "Illuminate\Translation\Translator" => "translator"
+              "Illuminate\Contracts\Translation\Translator" => "translator"
+              "Illuminate\Log\LogManager" => "log"
+              "Psr\Log\LoggerInterface" => "log"
+              "Illuminate\Mail\MailManager" => "mail.manager"
+              "Illuminate\Contracts\Mail\Factory" => "mail.manager"
+              "Illuminate\Mail\Mailer" => "mailer"
+              "Illuminate\Contracts\Mail\Mailer" => "mailer"
+              "Illuminate\Contracts\Mail\MailQueue" => "mailer"
+              "Illuminate\Auth\Passwords\PasswordBrokerManager" => "auth.password"
+              "Illuminate\Contracts\Auth\PasswordBrokerFactory" => "auth.password"
+              "Illuminate\Auth\Passwords\PasswordBroker" => "auth.password.broker"
+              "Illuminate\Contracts\Auth\PasswordBroker" => "auth.password.broker"
+              "Illuminate\Queue\QueueManager" => "queue"
+              "Illuminate\Contracts\Queue\Factory" => "queue"
+              "Illuminate\Contracts\Queue\Monitor" => "queue"
+              "Illuminate\Contracts\Queue\Queue" => "queue.connection"
+              "Illuminate\Queue\Failed\FailedJobProviderInterface" => "queue.failer"
+              "Illuminate\Routing\Redirector" => "redirect"
+              "Illuminate\Redis\RedisManager" => "redis"
+              "Illuminate\Contracts\Redis\Factory" => "redis"
+              "Illuminate\Redis\Connections\Connection" => "redis.connection"
+              "Illuminate\Contracts\Redis\Connection" => "redis.connection"
+              "Illuminate\Http\Request" => "request"
+              "Symfony\Component\HttpFoundation\Request" => "request"
+              "Illuminate\Routing\Router" => "router"
+              "Illuminate\Contracts\Routing\Registrar" => "router"
+              "Illuminate\Contracts\Routing\BindingRegistrar" => "router"
+              "Illuminate\Session\SessionManager" => "session"
+              "Illuminate\Session\Store" => "session.store"
+              "Illuminate\Contracts\Session\Session" => "session.store"
+              "Illuminate\Routing\UrlGenerator" => "url"
+              "Illuminate\Contracts\Routing\UrlGenerator" => "url"
+              "Illuminate\Validation\Factory" => "validator"
+              "Illuminate\Contracts\Validation\Factory" => "validator"
+              "Illuminate\View\Factory" => "view"
+              "Illuminate\Contracts\View\Factory" => "view"
+              "Illuminate\Contracts\Notifications\Dispatcher" => "Illuminate\Notifications\ChannelManager"
+              "Illuminate\Contracts\Notifications\Factory" => "Illuminate\Notifications\ChannelManager"
+              "Facade\FlareClient\Http\Client" => "flare.http"
+            ]
+            #abstractAliases: array:40 [
+              "app" => array:4 [
+                0 => "Illuminate\Foundation\Application"
+                1 => "Illuminate\Contracts\Container\Container"
+                2 => "Illuminate\Contracts\Foundation\Application"
+                3 => "Psr\Container\ContainerInterface"
+              ]
+              "auth" => array:2 [
+                0 => "Illuminate\Auth\AuthManager"
+                1 => "Illuminate\Contracts\Auth\Factory"
+              ]
+              "auth.driver" => array:1 [
+                0 => "Illuminate\Contracts\Auth\Guard"
+              ]
+              "blade.compiler" => array:1 [
+                0 => "Illuminate\View\Compilers\BladeCompiler"
+              ]
+              "cache" => array:2 [
+                0 => "Illuminate\Cache\CacheManager"
+                1 => "Illuminate\Contracts\Cache\Factory"
+              ]
+              "cache.store" => array:3 [
+                0 => "Illuminate\Cache\Repository"
+                1 => "Illuminate\Contracts\Cache\Repository"
+                2 => "Psr\SimpleCache\CacheInterface"
+              ]
+              "cache.psr6" => array:3 [
+                0 => "Symfony\Component\Cache\Adapter\Psr16Adapter"
+                1 => "Symfony\Component\Cache\Adapter\AdapterInterface"
+                2 => "Psr\Cache\CacheItemPoolInterface"
+              ]
+              "config" => array:2 [
+                0 => "Illuminate\Config\Repository"
+                1 => "Illuminate\Contracts\Config\Repository"
+              ]
+              "cookie" => array:3 [
+                0 => "Illuminate\Cookie\CookieJar"
+                1 => "Illuminate\Contracts\Cookie\Factory"
+                2 => "Illuminate\Contracts\Cookie\QueueingFactory"
+              ]
+              "encrypter" => array:2 [
+                0 => "Illuminate\Encryption\Encrypter"
+                1 => "Illuminate\Contracts\Encryption\Encrypter"
+              ]
+              "db" => array:2 [
+                0 => "Illuminate\Database\DatabaseManager"
+                1 => "Illuminate\Database\ConnectionResolverInterface"
+              ]
+              "db.connection" => array:2 [
+                0 => "Illuminate\Database\Connection"
+                1 => "Illuminate\Database\ConnectionInterface"
+              ]
+              "events" => array:2 [
+                0 => "Illuminate\Events\Dispatcher"
+                1 => "Illuminate\Contracts\Events\Dispatcher"
+              ]
+              "files" => array:1 [
+                0 => "Illuminate\Filesystem\Filesystem"
+              ]
+              "filesystem" => array:2 [
+                0 => "Illuminate\Filesystem\FilesystemManager"
+                1 => "Illuminate\Contracts\Filesystem\Factory"
+              ]
+              "filesystem.disk" => array:1 [
+                0 => "Illuminate\Contracts\Filesystem\Filesystem"
+              ]
+              "filesystem.cloud" => array:1 [
+                0 => "Illuminate\Contracts\Filesystem\Cloud"
+              ]
+              "hash" => array:1 [
+                0 => "Illuminate\Hashing\HashManager"
+              ]
+              "hash.driver" => array:1 [
+                0 => "Illuminate\Contracts\Hashing\Hasher"
+              ]
+              "translator" => array:2 [
+                0 => "Illuminate\Translation\Translator"
+                1 => "Illuminate\Contracts\Translation\Translator"
+              ]
+              "log" => array:2 [
+                0 => "Illuminate\Log\LogManager"
+                1 => "Psr\Log\LoggerInterface"
+              ]
+              "mail.manager" => array:2 [
+                0 => "Illuminate\Mail\MailManager"
+                1 => "Illuminate\Contracts\Mail\Factory"
+              ]
+              "mailer" => array:3 [
+                0 => "Illuminate\Mail\Mailer"
+                1 => "Illuminate\Contracts\Mail\Mailer"
+                2 => "Illuminate\Contracts\Mail\MailQueue"
+              ]
+              "auth.password" => array:2 [
+                0 => "Illuminate\Auth\Passwords\PasswordBrokerManager"
+                1 => "Illuminate\Contracts\Auth\PasswordBrokerFactory"
+              ]
+              "auth.password.broker" => array:2 [
+                0 => "Illuminate\Auth\Passwords\PasswordBroker"
+                1 => "Illuminate\Contracts\Auth\PasswordBroker"
+              ]
+              "queue" => array:3 [
+                0 => "Illuminate\Queue\QueueManager"
+                1 => "Illuminate\Contracts\Queue\Factory"
+                2 => "Illuminate\Contracts\Queue\Monitor"
+              ]
+              "queue.connection" => array:1 [
+                0 => "Illuminate\Contracts\Queue\Queue"
+              ]
+              "queue.failer" => array:1 [
+                0 => "Illuminate\Queue\Failed\FailedJobProviderInterface"
+              ]
+              "redirect" => array:1 [
+                0 => "Illuminate\Routing\Redirector"
+              ]
+              "redis" => array:2 [
+                0 => "Illuminate\Redis\RedisManager"
+                1 => "Illuminate\Contracts\Redis\Factory"
+              ]
+              "redis.connection" => array:2 [
+                0 => "Illuminate\Redis\Connections\Connection"
+                1 => "Illuminate\Contracts\Redis\Connection"
+              ]
+              "request" => array:2 [
+                0 => "Illuminate\Http\Request"
+                1 => "Symfony\Component\HttpFoundation\Request"
+              ]
+              "router" => array:3 [
+                0 => "Illuminate\Routing\Router"
+                1 => "Illuminate\Contracts\Routing\Registrar"
+                2 => "Illuminate\Contracts\Routing\BindingRegistrar"
+              ]
+              "session" => array:1 [
+                0 => "Illuminate\Session\SessionManager"
+              ]
+              "session.store" => array:2 [
+                0 => "Illuminate\Session\Store"
+                1 => "Illuminate\Contracts\Session\Session"
+              ]
+              "url" => array:2 [
+                0 => "Illuminate\Routing\UrlGenerator"
+                1 => "Illuminate\Contracts\Routing\UrlGenerator"
+              ]
+              "validator" => array:2 [
+                0 => "Illuminate\Validation\Factory"
+                1 => "Illuminate\Contracts\Validation\Factory"
+              ]
+              "view" => array:2 [
+                0 => "Illuminate\View\Factory"
+                1 => "Illuminate\Contracts\View\Factory"
+              ]
+              "Illuminate\Notifications\ChannelManager" => array:2 [
+                0 => "Illuminate\Contracts\Notifications\Dispatcher"
+                1 => "Illuminate\Contracts\Notifications\Factory"
+              ]
+              "flare.http" => array:1 [
+                0 => "Facade\FlareClient\Http\Client"
+              ]
+            ]
+            #extenders: array:1 [
+              "url" => array:1 [
+                0 => Closure(UrlGenerator $url, $app) {#13
+                  class: "Illuminate\Routing\RoutingServiceProvider"
+                  this: Illuminate\Routing\RoutingServiceProvider {#10}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php"
+                  line: "69 to 89"
+                }
+              ]
+            ]
+            #tags: []
+            #buildStack: []
+            #with: []
+            +contextual: []
+            #reboundCallbacks: array:2 [
+              "request" => array:1 [
+                0 => Closure($app, $request) {#142
+                  class: "Illuminate\Auth\AuthServiceProvider"
+                  this: Illuminate\Auth\AuthServiceProvider {#143}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Auth/AuthServiceProvider.php"
+                  line: "104 to 108"
+                }
+              ]
+              "events" => array:1 [
+                0 => Closure($app, $dispatcher) {#138
+                  class: "Illuminate\Auth\AuthServiceProvider"
+                  this: Illuminate\Auth\AuthServiceProvider {#143}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Auth/AuthServiceProvider.php"
+                  line: "118 to 130"
+                }
+              ]
+            ]
+            #globalBeforeResolvingCallbacks: []
+            #globalResolvingCallbacks: []
+            #globalAfterResolvingCallbacks: []
+            #beforeResolvingCallbacks: []
+            #resolvingCallbacks: array:1 [
+              "Illuminate\Foundation\Http\FormRequest" => array:1 [
+                0 => Closure($request, $app) {#174
+                  class: "Illuminate\Foundation\Providers\FormRequestServiceProvider"
+                  this: Illuminate\Foundation\Providers\FormRequestServiceProvider {#117}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Foundation/Providers/FormRequestServiceProvider.php"
+                  line: "33 to 37"
+                }
+              ]
+            ]
+            #afterResolvingCallbacks: array:2 [
+              "Illuminate\Contracts\Validation\ValidatesWhenResolved" => array:1 [
+                0 => Closure($resolved) {#173
+                  class: "Illuminate\Foundation\Providers\FormRequestServiceProvider"
+                  this: Illuminate\Foundation\Providers\FormRequestServiceProvider {#117}
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Foundation/Providers/FormRequestServiceProvider.php"
+                  line: "29 to 31"
+                }
+              ]
+              "view" => array:2 [
+                0 => Closure($view) {#175
+                  class: "Illuminate\Support\ServiceProvider"
+                  this: Illuminate\Notifications\NotificationServiceProvider {#114}
+                  use: {
+                    $path: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Notifications/resources/views"
+                    $namespace: "notifications"
+                  }
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php"
+                  line: "157 to 168"
+                }
+                1 => Closure($view) {#176
+                  class: "Illuminate\Support\ServiceProvider"
+                  this: Illuminate\Pagination\PaginationServiceProvider {#112}
+                  use: {
+                    $path: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Pagination/resources/views"
+                    $namespace: "pagination"
+                  }
+                  file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php"
+                  line: "157 to 168"
+                }
+              ]
+            ]
+          }
+          #bootingCallbacks: []
+          #bootedCallbacks: []
+        }
+        file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php"
+        line: "123 to 125"
+      }
+      "php" => Closure() {#185
+        class: "Facade\Ignition\IgnitionServiceProvider"
+        this: Facade\Ignition\IgnitionServiceProvider {#98}
+        file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/facade/ignition/src/IgnitionServiceProvider.php"
+        line: "129 to 131"
+      }
+      "blade" => Closure() {#179
+        class: "Facade\Ignition\IgnitionServiceProvider"
+        this: Facade\Ignition\IgnitionServiceProvider {#98}
+        file: "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/facade/ignition/src/IgnitionServiceProvider.php"
+        line: "133 to 139"
+      }
+    ]
+    #resolved: []
+  }
+  #finder: Illuminate\View\FileViewFinder {#244
+    #files: Illuminate\Filesystem\Filesystem {#182}
+    #paths: array:1 [
+      0 => "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/resources/views"
+    ]
+    #views: []
+    #hints: array:2 [
+      "notifications" => array:1 [
+        0 => "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Notifications/resources/views"
+      ]
+      "pagination" => array:1 [
+        0 => "/Users/letam/Library/Mobile Documents/com~apple~CloudDocs/webroot/example-app/vendor/laravel/framework/src/Illuminate/Pagination/resources/views"
+      ]
+    ]
+    #extensions: array:4 [
+      0 => "blade.php"
+      1 => "php"
+      2 => "css"
+      3 => "html"
+    ]
+  }
+  #events: Illuminate\Events\Dispatcher {#26}
+  #container: Illuminate\Foundation\Application {#2}
+  #shared: array:2 [
+    "__env" => Illuminate\View\Factory {#245}
+    "app" => Illuminate\Foundation\Application {#2}
+  ]
+  #extensions: array:4 [
+    "blade.php" => "blade"
+    "php" => "php"
+    "css" => "file"
+    "html" => "file"
+  ]
+  #composers: []
+  #renderCount: 0
+  #renderedOnce: []
+  #componentStack: []
+  #componentData: []
+  #slots: []
+  #slotStack: []
+  #sections: []
+  #sectionStack: []
+  #loopsStack: []
+  #pushes: []
+  #prepends: []
+  #pushStack: []
+  #translationReplacements: []
+}

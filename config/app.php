@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'debug' => (bool) env('APP_DEBUG', false),
+    'debug' => (bool)env('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -67,7 +67,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Asia/Ho_Chi_Minh',
 
     /*
     |--------------------------------------------------------------------------
@@ -135,6 +135,10 @@ return [
     */
 
     'providers' => [
+        /*
+         * Laravel debugbar
+        */
+        Barryvdh\DebugBar\ServiceProvider::class,
 
         /*
          * Laravel Framework Service Providers...
@@ -189,6 +193,11 @@ return [
     */
 
     'aliases' => [
+        /*
+         * debugbar
+         */
+        'DebugBar' => Barryvdh\Debugbar\Facade::class,
+
 
         'App' => Illuminate\Support\Facades\App::class,
         'Arr' => Illuminate\Support\Arr::class,
